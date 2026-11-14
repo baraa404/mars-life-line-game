@@ -6,7 +6,7 @@
 
 A stylized 3D Mars survival game about keeping a station alive—with a little help from PEBBLE.
 
-[Get started](#play-locally) · [Controls](#controls) · [Development](#development) · [Design documents](game-design/00-START-HERE.md)
+[**Play in your browser**](https://baraa404.github.io/mars-life-line-game/) · [Get started](#play-locally) · [Controls](#controls) · [Development](#development) · [Design documents](game-design/00-START-HERE.md)
 
 ![Mars Life Line gameplay: restoring power at a Martian outpost with PEBBLE](public/screenshots/pebble_hud_visual.png)
 
@@ -46,6 +46,10 @@ The world uses chunky silhouettes, ivory machinery, orange panels, dark recesses
 ![Mars outpost visual development reference—not a gameplay screenshot](docs/style/references/01-hero-scene.png)
 
 *Visual development reference; the images above it show the game running.*
+
+## Play online
+
+[Launch Mars Life Line](https://baraa404.github.io/mars-life-line-game/) in a desktop browser with WebGL support. No install or API key is needed.
 
 ## Play locally
 

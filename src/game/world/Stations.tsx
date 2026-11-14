@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { Html } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import type { EcctrlHandle } from 'ecctrl'
@@ -64,7 +65,7 @@ function Label({ id }: { id: OutdoorStation }) {
   return <Html position={position} center zIndexRange={[4, 2]} style={{ pointerEvents: station ? 'auto' : 'none' }}>
     <div ref={node} data-mouse className={'station-label' + (goal ? ' goal' : '') + (station ? ' station-label-interactive' : '')}>
       {station && <button className="station-label-hit" aria-label={`${info.name}: ${status}`} onClick={() => useMissionStore.getState().setPanel('manage')} />}
-      <img src={'/ui/icons/' + info.icon + '.svg'} alt="" />
+      <img src={publicUrl('/ui/icons/') + info.icon + '.svg'} alt="" />
       <span><strong>{info.name}</strong><small>{status}</small></span>
       {goal && <em aria-label="Mission here">!</em>}
     </div>

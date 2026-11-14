@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { Html, useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { CuboidCollider, RigidBody } from '@react-three/rapier'
@@ -36,7 +37,7 @@ const furniture: Piece[] = [
 ]
 
 function KitPiece({ asset, at, yaw, part }: Piece) {
-  const { scene } = useGLTF('/models/' + asset + '.glb')
+  const { scene } = useGLTF(publicUrl('/models/') + asset + '.glb')
   const model = useMemo(() => {
     const source = part ? scene.getObjectByName(part) : scene
     if (!source) throw new Error('Missing ' + asset + ' node ' + part)
@@ -53,7 +54,7 @@ function KitPiece({ asset, at, yaw, part }: Piece) {
   return <group position={at} rotation-y={yaw ?? 0}><primitive object={model} /></group>
 }
 
-for (const asset of new Set([...floor, ...walls, ...furniture].map(piece => piece.asset))) useGLTF.preload('/models/' + asset + '.glb')
+for (const asset of new Set([...floor, ...walls, ...furniture].map(piece => piece.asset))) useGLTF.preload(publicUrl('/models/') + asset + '.glb')
 
 function HabRoom() {
   const view = useMissionStore(s => s.view)

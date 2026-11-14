@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Stars, useGLTF } from '@react-three/drei'
 import { Suspense, useEffect, useMemo, useRef, type RefObject } from 'react'
@@ -18,8 +19,8 @@ function Cockpit({ stage, reduced, pressure, suitColor, onSuit, onSeal, onCycle,
   const clock = flightClock ?? fallbackClock
   const stars = useRef<Group>(null)
   const hemi = useRef<HemisphereLight>(null)
-  const cabin = useGLTF('/models/landing-ship-cabin-walkable.glb')
-  const orbit = useGLTF('/models/mars.glb')
+  const cabin = useGLTF(publicUrl('/models/landing-ship-cabin-walkable.glb'))
+  const orbit = useGLTF(publicUrl('/models/mars.glb'))
   const planet = useRef<Group>(null)
   const entryLight = useRef<PointLight>(null)
   const thrustLight = useRef<PointLight>(null)
@@ -206,7 +207,7 @@ function Cockpit({ stage, reduced, pressure, suitColor, onSuit, onSeal, onCycle,
 }
 
 function CabinProp({ id, position, suitColor, rotationY = Math.PI / 2 }: { id: string; position: [number, number, number]; suitColor?: string; rotationY?: number }) {
-  const { scene } = useGLTF('/models/' + id + '.glb')
+  const { scene } = useGLTF(publicUrl('/models/') + id + '.glb')
   const { model, materials } = useMemo(() => {
     const root = scene.clone(true)
     const materials: MeshStandardMaterial[] = []

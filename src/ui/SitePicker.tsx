@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { useState, type CSSProperties } from 'react'
 import { MARS_TREK, RADLAB, SITES, type SiteId } from '../sim/outpost/data'
 import { palette } from '../style/tokens'
@@ -22,7 +23,7 @@ export function SitePicker({ onPick, onBack }: { onPick: (site: SiteId) => void;
     </header>
     <figure className="site-map">
       <div className="site-map-image">
-        <img src="/ui/touchdown/mars-viking.webp" alt="Map of Mars from NASA Mars Trek" />
+        <img src={publicUrl('/ui/touchdown/mars-viking.webp')} alt="Map of Mars from NASA Mars Trek" />
         {order.map(id => <span key={id} className={'site-pin' + (id === selected ? ' on' : '')}
           style={{ left: (SITES[id].lon + 180) / 3.6 + '%', top: (90 - SITES[id].lat) / 1.8 + '%' }}>{SITES[id].name}</span>)}
       </div>

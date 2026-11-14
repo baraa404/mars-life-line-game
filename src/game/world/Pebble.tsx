@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { gameAudio } from '../audio/audio'
 import { Html, useGLTF } from '@react-three/drei'
 import { useFrame, type ThreeEvent } from '@react-three/fiber'
@@ -22,7 +23,7 @@ const playfulReplies = ['Boop received. Dignity rebooting…', 'You rock. I’m 
 const searchAngles = [0, .55, -.55, 1.15, -1.15, 1.75, -1.75]
 
 export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
-  const { scene, animations } = useGLTF('/models/pebble.glb')
+  const { scene, animations } = useGLTF(publicUrl('/models/pebble.glb'))
   const { world, rapier } = useRapier()
   const root = useRef<Group>(null)
   const asset = useMemo(() => scene.clone(true), [scene])
@@ -51,7 +52,7 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
     if (faceDefault) faceDefault.visible = false
     asset.getObjectByName('screen_face')?.traverse(node => { if (node instanceof Mesh) node.material = appearance })
     faces.forEach(face => {
-      const texture = loader.load('/ui/pebble-faces/' + face + '.svg')
+      const texture = loader.load(publicUrl('/ui/pebble-faces/') + face + '.svg')
       texture.colorSpace = SRGBColorSpace
       texture.flipY = true
       bank[face] = texture
@@ -275,7 +276,7 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
     </mesh>)}</group>
     {tag && <Html position={[0, 1.12, 0]} center zIndexRange={[22, 19]}>
       <button data-mouse className="station-tag" onClick={greet}>
-        <img alt="" src="/ui/icons/pebble.svg" /><strong>PEBBLE</strong>{job && <small>{travel ? 'On the way' : Math.ceil(job.etaMin) + ' min left'}</small>}
+        <img alt="" src={publicUrl('/ui/icons/pebble.svg')} /><strong>PEBBLE</strong>{job && <small>{travel ? 'On the way' : Math.ceil(job.etaMin) + ' min left'}</small>}
         {job && <svg className="job-ring" viewBox="0 0 22 22" role="img" aria-label={Math.round(progress * 100) + '% done'}>
           <circle cx="11" cy="11" r="8" fill="none" stroke="var(--structure-gray)" strokeWidth="3" />
           <circle cx="11" cy="11" r="8" fill="none" stroke="var(--accent-cyan)" strokeWidth="3"
@@ -287,7 +288,7 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
 }
 
 export function AstronautMarker({ player }: { player: RefObject<EcctrlHandle | null> }) {
-  const { scene, animations } = useGLTF('/models/young-astronaut.glb')
+  const { scene, animations } = useGLTF(publicUrl('/models/young-astronaut.glb'))
   const asset = useMemo(() => scene.clone(true), [scene])
   const mixer = useMemo(() => new AnimationMixer(asset), [asset])
   const marker = useRef<Group>(null)

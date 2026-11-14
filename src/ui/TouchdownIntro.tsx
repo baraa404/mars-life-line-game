@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { lazy, Suspense, useEffect, useRef, useState, type CSSProperties } from 'react'
 import { chamberPressure, hatchCanOpen, LOCKED_HATCH } from '../game/interaction/airlock'
 import type { LandingClock } from '../game/missions/landingFlight'
@@ -34,7 +35,7 @@ function Map({ zoom }: { zoom: boolean }) {
   return <figure className="landing-map">
     <div className={'landing-map-frame' + (zoom ? ' approaching' : '')}>
       <div className="landing-map-image">
-        <img src="/ui/touchdown/mars-viking.webp" alt="Global colour map of Mars" />
+        <img src={publicUrl('/ui/touchdown/mars-viking.webp')} alt="Global colour map of Mars" />
         {pins.map(pin => <span key={pin.name} className={'landing-pin ' + pin.className}
           style={{ left: (pin.at[0] + 180) / 3.6 + '%', top: (90 - pin.at[1]) / 1.8 + '%' }}>{pin.name}</span>)}
       </div>

@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import manifest from '../../../public/audio/manifest.json'
 
 type Cue = keyof typeof manifest
@@ -46,7 +47,7 @@ class GameAudio {
     if (!this.context) return Promise.resolve(null)
     if (!this.buffers.has(cue)) {
       const context = this.context
-      this.buffers.set(cue, fetch(manifest[cue].url)
+      this.buffers.set(cue, fetch(publicUrl(manifest[cue].url))
         .then(response => { if (!response.ok) throw new Error('Audio unavailable'); return response.arrayBuffer() })
         .then(data => context.decodeAudioData(data)).catch(() => null))
     }

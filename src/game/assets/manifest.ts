@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import manifestJson from './assetManifest.json'
 
 export type AssetCollider = 'hull' | 'trimesh' | 'cuboid' | 'none'
@@ -20,4 +21,4 @@ export type GameAsset = {
   ingestedAt: string
 }
 
-export const gameAssets = (manifestJson as unknown as { assets: GameAsset[] }).assets
+export const gameAssets = (manifestJson as unknown as { assets: GameAsset[] }).assets.map(asset => ({ ...asset, file: publicUrl(asset.file) }))

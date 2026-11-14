@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { RigidBody, TrimeshCollider } from '@react-three/rapier'
@@ -14,11 +15,11 @@ import { CABLE_FITTINGS, CABLE_ROUTES, SITE, type SitePlacement } from './siteLa
 for (const asset of new Set([
   ...SITE.map(placement => placement.asset),
   'mars-rock-kit', 'pebble', 'young-astronaut', 'flag-plaque', 'greenhouse-tray', 'path-lamp',
-])) useGLTF.preload(`/models/${asset}.glb`)
-useGLTF.preload(['/models/cable-run-straight.glb', '/models/cable-run-bend.glb', '/models/cable-run-t.glb'])
+])) useGLTF.preload(publicUrl(`/models/${asset}.glb`))
+useGLTF.preload([publicUrl('/models/cable-run-straight.glb'), publicUrl('/models/cable-run-bend.glb'), publicUrl('/models/cable-run-t.glb')])
 
 function PlacedModel({ placement, visualOnly = false }: { placement: SitePlacement; visualOnly?: boolean }) {
-  const { scene } = useGLTF(`/models/${placement.asset}.glb`)
+  const { scene } = useGLTF(publicUrl(`/models/${placement.asset}.glb`))
   const model = useMemo(() => prepareSiteModel(scene, placement.shadow !== false), [scene, placement.shadow])
   const collision = useMemo(() => {
     if (visualOnly || placement.collider === 'none') return null
@@ -65,7 +66,7 @@ function PlacedModel({ placement, visualOnly = false }: { placement: SitePlaceme
   return <RigidBody name={placement.id} type="fixed" colliders={false} position={pos} rotation={[0, placement.rotationY * Math.PI / 180, 0]}>{contents}</RigidBody>
 }
 function CableNetwork() {
-  const sources = useGLTF(['/models/cable-run-straight.glb', '/models/cable-run-bend.glb', '/models/cable-run-t.glb'])
+  const sources = useGLTF([publicUrl('/models/cable-run-straight.glb'), publicUrl('/models/cable-run-bend.glb'), publicUrl('/models/cable-run-t.glb')])
   const scene = sources[0].scene, bend = sources[1].scene, tee = sources[2].scene
   const network = useMemo(() => {
     const source = prepareSiteModel(scene, false), group = new THREE.Group(), owned: THREE.InstancedMesh[] = []

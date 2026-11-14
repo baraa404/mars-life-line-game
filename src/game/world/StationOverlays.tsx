@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { Html } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { useEffect, useMemo, useRef } from 'react'
@@ -45,7 +46,7 @@ export function ModuleTag({ id, at }: { id: string; at: Point }) {
   const status = moduleStatus(id, snapshot)
   return <Html position={at} center zIndexRange={[18, 3]}>
     <button className={'station-tag' + (id.startsWith('solar-') ? ' station-tag-solar' : '')} onClick={() => selectModule(id)}>
-      <img alt="" src={'/ui/icons/' + (module?.icon ?? 'pebble') + '.svg'} />
+      <img alt="" src={publicUrl('/ui/icons/') + (module?.icon ?? 'pebble') + '.svg'} />
       <strong>{module?.label ?? jobTargets[id]?.label}</strong>
       {module && <small><span className={'level-' + status.level}>{status.text}</span>{kw === null ? '' : ' · ' + Math.abs(kw).toFixed(1) + ' kW'}</small>}
     </button>

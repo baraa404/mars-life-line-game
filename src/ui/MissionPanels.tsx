@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { useEffect, useId, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import type { LoadId, PebbleJob } from '../sim/index'
 import { canSleep } from '../sim/time'
@@ -6,7 +7,7 @@ import { moduleKW, moduleStatus, selectModule } from '../game/world/StationOverl
 import { useMissionStore, type MissionSnapshot } from '../state/useMissionStore'
 
 export function Icon({ name }: { name: string }) {
-  return <img className="system-icon" src={'/ui/icons/' + name + '.svg'} alt="" />
+  return <img className="system-icon" src={publicUrl('/ui/icons/') + name + '.svg'} alt="" />
 }
 export function Clock({ minute }: { minute: number }) {
   return <>{String(Math.floor(minute / 60)).padStart(2, '0')}:{String(minute % 60).padStart(2, '0')}</>
@@ -143,7 +144,7 @@ function Decision() {
   const style = origin ? { '--card-x': origin[0] + 'vw', '--card-y': origin[1] + 'vh' } as CSSProperties : undefined
   return <Modal title={nearby ? 'PEBBLE' : 'PEBBLE on your Data Pad'} dismiss={false} style={style}
     className={'decision-dialog ' + (nearby ? 'pebble-delivery' : '')}>
-    <div className="decision-face"><img src="/ui/pebble-faces/neutral.svg" alt="" /></div>
+    <div className="decision-face"><img src={publicUrl('/ui/pebble-faces/neutral.svg')} alt="" /></div>
     <p className="decision-question">{card.text}</p>
     {card.details && <p>{card.details.info}</p>}
     <div className="option-grid">{card.options.map(option => <button key={option.id} className="decision-option"

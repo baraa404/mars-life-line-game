@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useGLTF } from '@react-three/drei'
 import { RigidBody, TrimeshCollider } from '@react-three/rapier'
 import { useEffect, useMemo } from 'react'
@@ -6,7 +7,7 @@ import { materials, palette } from '../../style/tokens'
 import { createRockPlacements, MESAS, SHELVES } from './landscape'
 import { appendCollision, createMesaGeometry, extractRockGeometry } from './landscapeGeometry'
 
-const ROCK_KIT = '/models/mars-rock-kit.glb'
+const ROCK_KIT = publicUrl('/models/mars-rock-kit.glb')
 const terrainPalette = { mid: palette['regolith-mid'], light: palette['regolith-light'], shadow: palette['shadow-plum'] }
 
 /** The saved Kiln kit supplies stones; the scene owns terrain, placement and collision. */

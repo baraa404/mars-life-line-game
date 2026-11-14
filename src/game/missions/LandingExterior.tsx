@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useFrame } from '@react-three/fiber'
 import { useEffect, useMemo, useRef, type RefObject } from 'react'
 import { Color, DoubleSide, Euler, FogExp2, Group, Mesh, Quaternion, ShaderMaterial, Vector3 } from 'three'
@@ -55,7 +56,7 @@ export function LandingExterior({ stage, clock }: { stage: LandingStage; clock: 
       <MarsLandscape visualOnly />
       <BaseSite visualOnly exclude={NO_LANDED_SHIP} />
       <TouchdownSiteProps />
-      <group position={[PEBBLE_ARRIVAL[0], surfaceHeight(...PEBBLE_ARRIVAL), PEBBLE_ARRIVAL[1]]}><AssetModel url="/models/pebble.glb" /></group>
+      <group position={[PEBBLE_ARRIVAL[0], surfaceHeight(...PEBBLE_ARRIVAL), PEBBLE_ARRIVAL[1]]}><AssetModel url={publicUrl('/models/pebble.glb')} /></group>
     </group>
     {/* Dust and plasma stay beyond the viewport, leaving the physical cabin unobscured. */}
     <mesh ref={veil} position={[0, 2.4, 2.05]} renderOrder={5}>

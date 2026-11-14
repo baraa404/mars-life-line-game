@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { useEffect, useState, type CSSProperties } from 'react'
 import { useMissionStore } from '../state/useMissionStore'
 import { useStoryStore } from '../state/useStoryStore'
@@ -35,7 +36,7 @@ export function meterRows(s: StoryState) {
 
 function Meter({ row }: { row: ReturnType<typeof meterRows>[number] }) {
   return <div className={'oh-meter ' + row.level}>
-    <img src={'/ui/icons/' + row.id + '.svg'} alt="" />
+    <img src={publicUrl('/ui/icons/') + row.id + '.svg'} alt="" />
     <span className="oh-meter-name">{row.name}</span>
     <span className="oh-meter-value">{row.value}</span>
     <span className="oh-bar" role="meter" aria-label={row.name} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(Math.min(1, row.fill) * 100)}>
@@ -77,10 +78,10 @@ function Systems({ s }: { s: StoryState }) {
   const goals = nextSpots(s)
   return <ul className="oh-stations">{(Object.keys(STATION_INFO) as OutdoorStation[]).map(id => {
     const isGoal = goals.some(spot => STATION_INFO[id].spots.includes(spot))
-    return <li key={id} className={isGoal ? 'goal' : ''}><img src={'/ui/icons/' + STATION_INFO[id].icon + '.svg'} alt="" />
+    return <li key={id} className={isGoal ? 'goal' : ''}><img src={publicUrl('/ui/icons/') + STATION_INFO[id].icon + '.svg'} alt="" />
       <span><strong>{STATION_INFO[id].name}</strong><small>{stationStatus(s, id)}</small></span></li>
   })}
-    <li><img src="/ui/icons/science.svg" alt="" /><span><strong>Operating priority</strong><small>{s.mode ? s.mode[0].toUpperCase() + s.mode.slice(1) + ' Mode' : 'Not set'}</small></span></li>
+    <li><img src={publicUrl('/ui/icons/science.svg')} alt="" /><span><strong>Operating priority</strong><small>{s.mode ? s.mode[0].toUpperCase() + s.mode.slice(1) + ' Mode' : 'Not set'}</small></span></li>
   </ul>
 }
 
@@ -421,7 +422,7 @@ function End({ s }: { s: StoryState }) {
       {/* 4. PEBBLE Cheerful Companion Transmission */}
       <div className="kid-pebble-card">
         <div className="kid-pebble-icon">
-          <img src="/ui/icons/pebble.svg" alt="PEBBLE" />
+          <img src={publicUrl('/ui/icons/pebble.svg')} alt="PEBBLE" />
           <span>PEBBLE</span>
         </div>
         <div className="kid-pebble-bubble">
@@ -650,7 +651,7 @@ export function StoryHud() {
       {quiet && station && <IsometricSystems s={s} />}
     </div>
     <MissionCard s={s} />
-    {s.filter === 'carried' && <p className="oh-card story-carry"><img src="/ui/icons/water.svg" alt="" />Carrying: new water filter</p>}
+    {s.filter === 'carried' && <p className="oh-card story-carry"><img src={publicUrl('/ui/icons/water.svg')} alt="" />Carrying: new water filter</p>}
     {s.brownout && <p className="oh-card story-alert" role="alert">⚠ BATTERY EMPTY: machines are off</p>}
     <Vitals s={s} />
     {quiet && !station && <div className="center-dot" aria-hidden="true" />}

@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useFrame } from '@react-three/fiber'
 import { useMemo, useRef, type RefObject } from 'react'
 import type { EcctrlHandle } from 'ecctrl'
@@ -29,7 +30,7 @@ export function TouchdownMission({ player }: { player: RefObject<EcctrlHandle | 
 }
 
 export function TouchdownSiteProps() {
-  const plaque = useGLTF('/models/flag-plaque.glb')
+  const plaque = useGLTF(publicUrl('/models/flag-plaque.glb'))
   const plaqueModel = useMemo(() => plaque.scene.clone(true), [plaque.scene])
   return <primitive object={plaqueModel} position={[2.8, 2.25, 4.35]} rotation-y={-Math.PI / 2} />
 }

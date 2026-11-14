@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { useEffect, useId, useRef, type ReactNode } from 'react'
 import { useMissionStore } from '../state/useMissionStore'
 
@@ -23,7 +24,7 @@ export function Modal({ title, icon, children, closable = true, wide = false, cl
   }, [])
   return <dialog ref={dialog} data-mouse="" className={'oh-dialog' + (wide ? ' wide' : '') + (className ? ' ' + className : '')} aria-labelledby={label} onCancel={event => event.preventDefault()}>
     <header>
-      {icon && <img src={'/ui/icons/' + icon + '.svg'} alt="" />}
+      {icon && <img src={publicUrl('/ui/icons/') + icon + '.svg'} alt="" />}
       <h2 id={label}>{title}</h2>
     </header>
     <div className="oh-dialog-body">{children}</div>

@@ -1,3 +1,4 @@
+import { publicUrl } from '../publicUrl'
 import { memo, useEffect, useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import { buildContext } from '../pebble/buildContext'
@@ -127,7 +128,7 @@ export const PebbleChat = memo(function PebbleChat({ visible, speech }: { visibl
     }}>
     <button ref={toggle} type="button" className="pebble-chat-card" aria-expanded={expanded} aria-controls="pebble-chat-details"
       onClick={expanded ? collapse : openChat}>
-      <img src="/ui/pebble-faces/happy.svg" alt="" />
+      <img src={publicUrl('/ui/pebble-faces/happy.svg')} alt="" />
       <span className="pebble-chat-who">
         <strong>PEBBLE</strong>
         {speech ? <span className="pebble-chat-hint" role="status">{speech}</span>

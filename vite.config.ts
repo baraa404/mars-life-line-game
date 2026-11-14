@@ -6,6 +6,7 @@ import { pebbleMiddleware } from './server/pebble/chat.ts'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), ['GEMINI_', 'PEBBLE_'])
   return {
+    base: process.env.GITHUB_PAGES === 'true' ? '/mars-life-line-game/' : '/',
     plugins: [react(), {
       name: 'pebble-chat',
       configureServer(server) { server.middlewares.use(pebbleMiddleware(env)) },

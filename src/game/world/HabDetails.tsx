@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useGLTF } from '@react-three/drei'
 import { useEffect, useMemo } from 'react'
 import { prepareCabinModel } from '../missions/cabinModel'
@@ -5,7 +6,7 @@ import { BUNK_SHIFT_Z } from './habLayout'
 
 /** These static, texture-free fixtures share the cabin's material batching path. */
 export function HabDetails() {
-  const { scene } = useGLTF('/models/hab-lived-in.glb')
+  const { scene } = useGLTF(publicUrl('/models/hab-lived-in.glb'))
   const model = useMemo(() => {
     const placed = scene.clone(true)
     placed.traverse(node => {
@@ -17,4 +18,4 @@ export function HabDetails() {
   return <primitive object={model.root} />
 }
 
-useGLTF.preload('/models/hab-lived-in.glb')
+useGLTF.preload(publicUrl('/models/hab-lived-in.glb'))

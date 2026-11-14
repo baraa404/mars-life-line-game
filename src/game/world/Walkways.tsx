@@ -1,3 +1,4 @@
+import { publicUrl } from '../../publicUrl'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { useEffect, useMemo, useRef } from 'react'
@@ -20,7 +21,7 @@ function lampPoses() {
 }
 
 function Lamps() {
-  const { scene } = useGLTF('/models/path-lamp.glb')
+  const { scene } = useGLTF(publicUrl('/models/path-lamp.glb'))
   const meshes = useMemo(() => {
     const poses = lampPoses(), list: THREE.InstancedMesh[] = []
     scene.updateMatrixWorld(true)
@@ -193,4 +194,4 @@ export function Walkways() {
     <ExteriorLights />
   </group>
 }
-useGLTF.preload('/models/path-lamp.glb')
+useGLTF.preload(publicUrl('/models/path-lamp.glb'))
