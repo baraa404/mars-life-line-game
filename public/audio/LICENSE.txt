@@ -1,0 +1,14 @@
+Mars Life Line — Original Procedural Audio
+
+All audio files in sfx/, music/ and preview/ were synthesized from original
+code for this project. No third-party recordings or music were used.
+
+To the extent possible under law, the authors dedicate these audio files to
+the public domain under CC0 1.0 Universal (CC0-1.0). You may copy, modify,
+distribute and perform the audio, including commercially, without attribution.
+
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+The dedication applies to the audio recordings. Source code and external
+tooling retain their own applicable licenses.

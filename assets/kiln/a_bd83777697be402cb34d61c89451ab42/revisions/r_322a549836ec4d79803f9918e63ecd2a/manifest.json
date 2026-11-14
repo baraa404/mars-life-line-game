@@ -1,0 +1,428 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_bd83777697be402cb34d61c89451ab42",
+  "revisionId": "r_322a549836ec4d79803f9918e63ecd2a",
+  "name": "landing-scorch",
+  "tags": [],
+  "createdAt": "2026-11-12T21:26:35.761Z",
+  "description": "Flat feathered RGBA vertex-colour scorch patch matching models and assets images/phase-2/landing-scorch.png; no textures or baked background.",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:4d37616634a994f4b147e1d3f84a88ecbeb6170ba510411dd112b92bf3dc3541",
+      "bytes": 40908
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:9faa6e177a1745389a18f2466b2d3fd69a45784c76ed039d2b2a4864812598f4",
+      "bytes": 11141
+    },
+    "preview.png": {
+      "sha256": "sha256:09ba17aa808cf6506eb624535b254fd61c77296b3c49ca1e5d523452131c8a59",
+      "bytes": 39305
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "4d37616634a994f4b147e1d3f84a88ecbeb6170ba510411dd112b92bf3dc3541",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -7.751034259796143,
+          0,
+          -7.635000228881836
+        ],
+        "max": [
+          7.751034259796143,
+          0,
+          7.364999771118164
+        ],
+        "size": [
+          15.502068519592285,
+          0,
+          15
+        ],
+        "center": [
+          0,
+          0,
+          -0.13500022888183594
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 0,
+        "offsetToGround": 0,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "landing-scorch"
+      },
+      "renderMetrics": {
+        "triangles": 1472,
+        "drawCalls": 1,
+        "uniqueGeometries": 1,
+        "uniqueMaterials": 1,
+        "textureCount": 0,
+        "transparentMaterials": 1,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 1500
+            },
+            "measured": {
+              "triangles": 1472
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "materialAdvice": [
+        {
+          "code": "MATERIAL_BLEND_AREA_ADVICE",
+          "disposition": "advisory",
+          "reference": "web.portable.v1/standard",
+          "message": "Blended primitive surface area is 100.0% (176.522 of 176.522 square asset units); the reference figure is 15.0%. Largest BLEND materials by share of surface area: \"matte-environment:scorch-alpha\" 100.0%. This is an optimization note from the web.portable.v1/standard reference profile, not a requirement; keep what carries the look. To make a limit binding, declare defineBudget({ materialTier: 'web.portable.v1/standard' }).",
+          "measurement": {
+            "name": "blendedSurfaceAreaRatio",
+            "actual": 1,
+            "reference": 0.15,
+            "unit": "ratio"
+          },
+          "advice": "To reduce it, use MASK for binary cutouts such as foliage, reduce layered transparent surfaces, and reserve BLEND for genuinely translucent glass/effects."
+        }
+      ],
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [],
+          "metrics": {
+            "partVolumeCoverage": "complete-static-pairs",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 1,
+            "partVolumeCandidatePairs": 0,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 0,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 1,
+            "openSurfaceClosedParts": 0,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [
+            {
+              "code": "MATERIAL_BLEND_AREA_ADVICE",
+              "disposition": "observe",
+              "dimension": "runtimeCost",
+              "profile": "web.portable.v1/standard",
+              "message": "Blended primitive surface area is 100.0% (176.522 of 176.522 square asset units); the reference figure is 15.0%. Largest BLEND materials by share of surface area: \"matte-environment:scorch-alpha\" 100.0%. This is an optimization note from the web.portable.v1/standard reference profile, not a requirement; keep what carries the look. To make a limit binding, declare defineBudget({ materialTier: 'web.portable.v1/standard' }). To reduce it, use MASK for binary cutouts such as foliage, reduce layered transparent surfaces, and reserve BLEND for genuinely translucent glass/effects.",
+              "measurement": {
+                "name": "blendedSurfaceAreaRatio",
+                "actual": 1,
+                "expected": 0.15,
+                "unit": "ratio"
+              }
+            }
+          ],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 1 transparent material (lowers A/B to C). Also: 1 distinct material (A at 0-1); 1 geometry; 1 draw call.",
+            "uniqueGeometries": 1,
+            "uniqueMaterials": 1,
+            "meshNodes": 1,
+            "meshInstances": 1,
+            "drawCalls": 1,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 1,
+            "triangles": 1472,
+            "materialCount": 1,
+            "opaqueMaterials": 0,
+            "maskedMaterials": 0,
+            "blendedMaterials": 1,
+            "singleSidedMaterials": 0,
+            "doubleSidedMaterials": 1,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 1
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:4d37616634a994f4b147e1d3f84a88ecbeb6170ba510411dd112b92bf3dc3541",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

@@ -1,0 +1,147 @@
+.pebble-chat {
+  pointer-events: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  box-sizing: border-box;
+  font-size: 1.05rem;
+  width: fit-content;
+  max-width: min(28em, 100%);
+  padding: .35em;
+  min-width: 0;
+}
+.pebble-chat.is-expanded {
+  width: min(32em, calc(100vw - 32px));
+  max-height: min(38em, max(14em, calc(100dvh - 110px)));
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: .5em;
+  padding: .75em;
+  background: var(--space-deep);
+}
+.hud .pebble-chat-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: .85em;
+  padding: .6em .85em;
+  text-align: start;
+  background: none;
+  border: 0;
+  border-radius: .85em;
+  cursor: pointer;
+}
+.hud .pebble-chat-card:hover { background: rgb(255 255 255 / 8%); }
+.pebble-chat-card > img {
+  width: 3.6em;
+  height: 3.6em;
+  flex: none;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--space-deep) 88%, black);
+  padding: 5px;
+  border: 1.5px solid var(--oh-line, #ffffff30);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+.pebble-chat-who { display: grid; gap: .2em; min-width: 0; }
+.pebble-chat-who strong {
+  font-weight: 900;
+  font-size: 1.25em;
+  font-family: var(--display);
+  letter-spacing: .04em;
+  color: var(--accent-orange, #ff9f43);
+}
+.hud .pebble-chat-hint {
+  color: var(--structure-white, #ffffff);
+  overflow-wrap: anywhere;
+  font-size: .95em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.pebble-chat-card > svg { width: 1.4em; height: 1.4em; flex: none; margin-inline-start: auto; }
+.pebble-chat-card > kbd {
+  flex: none;
+  margin-inline-start: auto;
+  font-size: 1.15em;
+  padding: .2em .65em;
+  border-radius: 7px;
+}
+.pebble-chat-welcome {
+  display: grid;
+  gap: .65em;
+  padding: .4em .2em;
+}
+.pebble-welcome-text {
+  font-size: .98em;
+  line-height: 1.45;
+  color: var(--oh-text, #ffffff);
+  margin: 0;
+}
+.pebble-chat-details:not([hidden]) {
+  display: grid;
+  grid-template: minmax(0, 1fr) auto / minmax(0, 1fr);
+  gap: .6em;
+  min-height: 0;
+}
+.pebble-chat-messages { display: grid; gap: .5em; min-height: 0; overflow-y: auto; }
+.pebble-chat-messages .button-row { display: grid; justify-items: start; gap: .45em; }
+.hud .pebble-chat-note { margin-top: .4em; font-size: .82em; color: var(--soft); }
+.hud .pebble-chat .primary { color: var(--oh-ink, #1f1b2e); background: var(--accent-orange, #ff9f43); font-weight: 900; }
+.pebble-transcript {
+  display: grid;
+  gap: 0.75rem;
+  max-height: min(35vh, 18em);
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+}
+.pebble-transcript li {
+  width: fit-content;
+  max-width: min(92%, 65ch);
+  padding: 0.75rem 1rem;
+  border: 1.5px solid currentColor;
+  border-radius: 0.9rem;
+  overflow-wrap: anywhere;
+  font-size: 1.02em;
+  line-height: 1.45;
+}
+.pebble-transcript .from-player {
+  justify-self: end;
+  background: color-mix(in srgb, var(--accent-blue, #64b5f6) 24%, black);
+  border-color: color-mix(in srgb, var(--accent-blue, #64b5f6) 50%, white);
+}
+.pebble-transcript .from-pebble {
+  justify-self: start;
+  border-color: var(--accent-orange, #ff9f43);
+  background: color-mix(in srgb, var(--regolith-mid, #8d4f3b) 28%, black);
+}
+.pebble-transcript a { display: block; color: var(--accent-orange, #ff9f43); font-weight: 800; margin-top: 0.35rem; }
+.pebble-chat-input { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5em; }
+.pebble-chat-input input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  border: 1.5px solid var(--oh-line, #ffffff35);
+  border-radius: 0.65rem;
+  padding: 0.7rem 0.95rem;
+  color: inherit;
+  background: rgb(255 255 255 / 10%);
+  font: inherit;
+  font-size: 1.05em;
+}
+.pebble-chat-input input::placeholder { color: var(--oh-soft, #f0e6d6); opacity: 0.85; }
+.pebble-chat-input input:focus-visible { outline: 2px solid var(--accent-orange); outline-offset: 2px; }
+.pebble-chat-input button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1.05em;
+  font-weight: 900;
+  border-radius: 0.65rem;
+  cursor: pointer;
+}
+.pebble-chat-error { color: #ffd1ad; }
+
+@media (max-width: 720px), (max-height: 700px) {
+  .pebble-chat { font-size: .95em; }
+  .pebble-chat.is-expanded {
+    z-index: 1;
+    width: min(22em, calc(100vw - 14px));
+  }
+}

@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Kiln pipeline
+assets/exports/*
+!assets/exports/.gitkeep
+assets/style/.kiln-project.patch.json
+KILN_PROGRESS.md
+
+# Kiln scratch state: build cache, review operation records and locks
+.kiln/cache/
+.kiln/review/
+
+# Agent instructions and local assistant configuration
+AGENTS.md
+CLAUDE.md
+.agents/
+.codex/
+.codex-attachments/
+.cursor/
+skills/
+START.md
+*_PROGRESS.md
+
+# Local Kiln installation, source store and generated pipeline output
+.kiln/
+kiln.mjs
+codex.mjs
+assets/working/
+assets/reviews/
+
+# Historical project copies and sound authoring previews
+/archive/
+sound/__pycache__/
+sound/renders/
+sound/review/
+
+# Reference-generation bookkeeping (keep the images and models)
+/models and assets images/*.json
+
+# Build and test caches
+*.tsbuildinfo
+coverage/
+.vite/
+__pycache__/
+*.pyc

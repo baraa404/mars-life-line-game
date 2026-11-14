@@ -1,0 +1,784 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_930b7c3869f647b98d17ae24842944db",
+  "revisionId": "r_140f4a7ebc4542ccbbaa979c28fda128",
+  "name": "hab-airlock",
+  "tags": [],
+  "createdAt": "2026-11-12T19:15:53.751Z",
+  "description": "Phase 2 reference-matched hab-airlock; editable source and review notes in assets/briefs/hab-airlock.md.",
+  "brief": "Only visual reference: /home/baraa/chaos box/projects/Personal Projects/Docs/models and assets images/phase-2/hab-airlock.png. Follow this individual image; no other visual reference. Catalog scale and semantic node requirements apply. Reference reviewed as valid without regeneration.",
+  "attribution": {
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:017d8a54c8e11fc1cc5205f0cebe08f342d84861e9c256acbda25c8a394ee57b",
+      "bytes": 124344
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:1f27f196180b30016cfb35b4a31872a21bd3bbd040f0d6aefa1c0065e0712aad",
+      "bytes": 14711
+    },
+    "preview.png": {
+      "sha256": "sha256:b33c14e42a656a1d6c6c10f9658a0ba6bfe78ce00c6d415e809518f779bf94ea",
+      "bytes": 46981
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "017d8a54c8e11fc1cc5205f0cebe08f342d84861e9c256acbda25c8a394ee57b",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -1.559999999329448,
+          -5.9604643443123e-10,
+          -1.527500033378601
+        ],
+        "max": [
+          2.0299999713897705,
+          3.2950000166893005,
+          1.527500033378601
+        ],
+        "size": [
+          3.5899999707192185,
+          3.295000017285347,
+          3.055000066757202
+        ],
+        "center": [
+          0.23499998603016126,
+          1.647500008046627,
+          0
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": -5.9604643443123e-10,
+        "offsetToGround": 5.9604643443123e-10,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "hab-airlock"
+      },
+      "renderMetrics": {
+        "triangles": 2436,
+        "drawCalls": 23,
+        "uniqueGeometries": 22,
+        "uniqueMaterials": 12,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 12000
+            },
+            "measured": {
+              "triangles": 2436
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "pass",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"hab-airlock_smooth-structure\" and \"hab-airlock_accent-paint\" occupy the same space: they share 0.351 m³, which is 45.8% of the smaller part.",
+              "affected": {
+                "node": "hab-airlock_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.458222785,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_recess\" and \"inner_hatch_door_-1\" occupy the same space: they share 0.0296 m³, which is 37.3% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.372582737,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_recess\" and \"inner_hatch_door_1\" occupy the same space: they share 0.0296 m³, which is 37.3% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.372582737,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_recess\" and \"outer_hatch_door_-1\" occupy the same space: they share 0.0296 m³, which is 37.3% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.372582737,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_recess\" and \"outer_hatch_door_1\" occupy the same space: they share 0.0296 m³, which is 37.3% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.372582737,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"hab-airlock_smooth-structure\" and \"hab-airlock_smooth-structure_structure-gray\" occupy the same space: they share 0.858 m³, which is 28.5% of the smaller part.",
+              "affected": {
+                "node": "hab-airlock_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.285112403,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"hab-airlock_dark-trim\" and \"hab-airlock_visor\" occupy the same space: they share 0.00557 m³, which is 27.3% of the smaller part.",
+              "affected": {
+                "node": "hab-airlock_dark-trim"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.272903451,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory roof service cap\" and \"Airlock cyan beacon_smooth-structure_structure-gray\" occupy the same space: they share 0.00254 m³, which is 25.6% of the smaller part.",
+              "affected": {
+                "node": "Ivory roof service cap"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.256119427,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"hab-airlock_accent-paint\" and \"hab-airlock_dark-trim\" occupy the same space: they share 0.0186 m³, which is 24.1% of the smaller part.",
+              "affected": {
+                "node": "hab-airlock_accent-paint"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.240739592,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Roof dark collar\" and \"Ivory roof service cap\" occupy the same space: they share 0.0751 m³, which is 22.2% of the smaller part.",
+              "affected": {
+                "node": "Roof dark collar"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.222367803,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_orange_recess\" and \"inner_hatch_amber_outline\" occupy the same space: they share 0.00325 m³, which is 18.6% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_orange_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.185553259,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_orange_recess\" and \"outer_hatch_amber_outline\" occupy the same space: they share 0.00325 m³, which is 18.6% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_orange_recess"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.185553259,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_outer_octagonal_portal\" and \"hab-airlock_smooth-structure_structure-gray\" occupy the same space: they share 0.0502 m³, which is 10.7% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_outer_octagonal_portal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.106769078,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Roof dark collar\" and \"hab-airlock_smooth-structure\" occupy the same space: they share 0.0268 m³, which is 7.9% of the smaller part.",
+              "affected": {
+                "node": "Roof dark collar"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.079392988,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Airlock cyan beacon_smooth-structure_structure-gray\" and \"Airlock cyan beacon_emissive-cool\" occupy the same space: they share 0.0000311 m³, which is 7.9% of the smaller part.",
+              "affected": {
+                "node": "Airlock cyan beacon_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.078957789,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_outer_octagonal_portal\" and \"hab-airlock_smooth-structure_structure-gray\" occupy the same space: they share 0.0295 m³, which is 6.3% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_outer_octagonal_portal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062658501,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_door_-1\" and \"inner_hatch_smooth-structure_structure-gray\" occupy the same space: they share 0.0000872 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_door_-1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059236629,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_door_1\" and \"inner_hatch_smooth-structure_structure-gray\" occupy the same space: they share 0.0000872 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_door_1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059236629,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_door_-1\" and \"outer_hatch_smooth-structure_structure-gray\" occupy the same space: they share 0.0000872 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_door_-1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059236629,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_door_1\" and \"outer_hatch_smooth-structure_structure-gray\" occupy the same space: they share 0.0000872 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_door_1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059236629,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_outer_octagonal_portal\" and \"hab-airlock_smooth-structure\" occupy the same space: they share 0.0207 m³, which is 4.4% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_outer_octagonal_portal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.044089519,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"hab-airlock_smooth-structure_structure-gray\" and \"hab-airlock_accent-paint\" occupy the same space: they share 0.0149 m³, which is 1.9% of the smaller part.",
+              "affected": {
+                "node": "hab-airlock_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.019413826,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"inner_hatch_outer_octagonal_portal\" and \"inner_hatch_orange_recess\" occupy the same space: they share 0.000505 m³, which is 0.7% of the smaller part.",
+              "affected": {
+                "node": "inner_hatch_outer_octagonal_portal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.006933639,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"outer_hatch_outer_octagonal_portal\" and \"outer_hatch_orange_recess\" occupy the same space: they share 0.000505 m³, which is 0.7% of the smaller part.",
+              "affected": {
+                "node": "outer_hatch_outer_octagonal_portal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.006933639,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "complete-static-pairs",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 23,
+            "partVolumeCandidatePairs": 53,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 53,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 0,
+            "openSurfaceClosedParts": 23,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "D",
+            "instanceabilitySummary": "D (informational, not a QA verdict), set by 12 distinct materials (D at 7-12). Also: 22 geometries; 23 draw calls. Optional advice, not a requirement: merging smooth-structure:structure-gray + smooth-structure + outer_hatch_gray + accent-paint and 5 more (differ in baseColorFactor, metallicFactor, roughnessFactor); emissive-cool + outer_hatch_amber + inner_hatch_amber (differ in baseColorFactor, emissiveFactor, roughnessFactor, KHR_materials_emissive_strength) would leave 2 materials (B at 2-3).",
+            "uniqueGeometries": 22,
+            "uniqueMaterials": 12,
+            "meshNodes": 23,
+            "meshInstances": 23,
+            "drawCalls": 23,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 2436,
+            "materialCount": 12,
+            "opaqueMaterials": 12,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 12,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 1,
+            "materialExtensionsUsed": "KHR_materials_emissive_strength",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:017d8a54c8e11fc1cc5205f0cebe08f342d84861e9c256acbda25c8a394ee57b",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

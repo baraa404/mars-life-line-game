@@ -1,0 +1,444 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_3d806c79a4da4207a1a5e005d56030b4",
+  "revisionId": "r_4ab49f9fef7c4681a343a3449cdbfebe",
+  "name": "window-hab",
+  "tags": [],
+  "createdAt": "2026-11-12T22:41:03.069Z",
+  "description": "Reference-matched Phase 3 model and native clips; brief assets/briefs/window-hab.md",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:8436011cf650c953f011531b596c1687650b64df19b8c304b8f8f3353cdfb55a",
+      "bytes": 30032
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:80444f4cfca7dfc70f3e7666e16aaaf7fe9065733fe079e5d5ef808ca196970c",
+      "bytes": 12444
+    },
+    "preview.png": {
+      "sha256": "sha256:d89e10bde57326ceb25b7f119e50bdcf4431535a1f88a183817be3fea3b01d7d",
+      "bytes": 25190
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "8436011cf650c953f011531b596c1687650b64df19b8c304b8f8f3353cdfb55a",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -0.0900000035762788,
+          -7.152557379708213e-9,
+          -0.5299999713897705
+        ],
+        "max": [
+          0.1315000001862645,
+          0.8600000071525573,
+          0.5299999713897705
+        ],
+        "size": [
+          0.2215000037625433,
+          0.8600000143051147,
+          1.059999942779541
+        ],
+        "center": [
+          0.020749998304992856,
+          0.42999999999999994,
+          0
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": -7.152557379708213e-9,
+        "offsetToGround": 7.152557379708213e-9,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "window-hab"
+      },
+      "renderMetrics": {
+        "triangles": 366,
+        "drawCalls": 9,
+        "uniqueGeometries": 9,
+        "uniqueMaterials": 6,
+        "textureCount": 0,
+        "transparentMaterials": 2,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 1500
+            },
+            "measured": {
+              "triangles": 366
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate reinforced frame\" and \"Ivory inner frame\" occupy the same space: they share 0.0135 m³, which is 35.0% of the smaller part.",
+              "affected": {
+                "node": "Slate reinforced frame"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.350284695,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_UNMEASURED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "5 part-volume measurements were unavailable. 5 because a valid closed solid could not be measured (Not manifold): \"Window warm glass\", \"Frost corner -1-1\", \"Frost corner -11\", \"Frost corner 1-1\", \"Frost corner 11\". 10 overlapping part pairs include one of these parts and were not measured. These parts are not certified clear."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"Window warm glass\" reaches 0.0247 m inside solid \"Ivory inner frame\": 4 of 4 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "Window warm glass"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0247487348,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 4,
+                  "sampledVertices": 4
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 9,
+            "partVolumeCandidatePairs": 13,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 3,
+            "partVolumeUnmeasurablePairs": 10,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 5,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 5,
+            "openSurfaceClosedParts": 4,
+            "openSurfaceCandidatePairs": 10,
+            "openSurfacePairsSampled": 10,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 6 distinct materials (C at 4-6). Also: 2 transparent materials (lowers only A/B to C); 9 geometries; 9 draw calls. Optional advice, not a requirement: merging smooth-structure:structure-gray + smooth-structure + visor + accent-paint (differ in baseColorFactor, metallicFactor, roughnessFactor); glass + glass (differ in baseColorFactor) would leave 2 materials (B at 2-3; other factors give C).",
+            "uniqueGeometries": 9,
+            "uniqueMaterials": 6,
+            "meshNodes": 9,
+            "meshInstances": 9,
+            "drawCalls": 9,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 2,
+            "triangles": 366,
+            "materialCount": 6,
+            "opaqueMaterials": 4,
+            "maskedMaterials": 0,
+            "blendedMaterials": 2,
+            "singleSidedMaterials": 4,
+            "doubleSidedMaterials": 2,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0.08301472301097099
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:8436011cf650c953f011531b596c1687650b64df19b8c304b8f8f3353cdfb55a",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

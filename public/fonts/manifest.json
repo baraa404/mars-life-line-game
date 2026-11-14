@@ -1,0 +1,22 @@
+{
+  "fonts": [
+    {
+      "family": "Nunito",
+      "file": "/fonts/Nunito-Variable.ttf",
+      "license": "/fonts/Nunito-OFL.txt",
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "source": "https://github.com/google/fonts/tree/main/ofl/nunito",
+      "role": "body",
+      "licenseName": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Baloo 2",
+      "file": "/fonts/Baloo2-Variable.ttf",
+      "license": "/fonts/Baloo2-OFL.txt",
+      "sha256": "d47a6852548059b1db49a1319d06d499d546c3fa2237cf9eee9c43c8abb025c2",
+      "source": "https://github.com/google/fonts/tree/main/ofl/baloo2",
+      "role": "headings",
+      "licenseName": "SIL Open Font License 1.1"
+    }
+  ]
+}

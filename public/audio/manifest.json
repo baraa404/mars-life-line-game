@@ -1,0 +1,326 @@
+{
+  "footstep-regolith-1": {
+    "url": "/audio/sfx/footstep-regolith-1.wav",
+    "category": "footsteps",
+    "description": "Soft regolith boot step, variant 1",
+    "duration": 0.348,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-regolith-2": {
+    "url": "/audio/sfx/footstep-regolith-2.wav",
+    "category": "footsteps",
+    "description": "Soft regolith boot step, variant 2",
+    "duration": 0.359,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-regolith-3": {
+    "url": "/audio/sfx/footstep-regolith-3.wav",
+    "category": "footsteps",
+    "description": "Soft regolith boot step, variant 3",
+    "duration": 0.316,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-regolith-4": {
+    "url": "/audio/sfx/footstep-regolith-4.wav",
+    "category": "footsteps",
+    "description": "Soft regolith boot step, variant 4",
+    "duration": 0.357,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-cabin-1": {
+    "url": "/audio/sfx/footstep-cabin-1.wav",
+    "category": "footsteps",
+    "description": "Soft cabin boot step, variant 1",
+    "duration": 0.335,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-cabin-2": {
+    "url": "/audio/sfx/footstep-cabin-2.wav",
+    "category": "footsteps",
+    "description": "Soft cabin boot step, variant 2",
+    "duration": 0.326,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-cabin-3": {
+    "url": "/audio/sfx/footstep-cabin-3.wav",
+    "category": "footsteps",
+    "description": "Soft cabin boot step, variant 3",
+    "duration": 0.348,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "footstep-cabin-4": {
+    "url": "/audio/sfx/footstep-cabin-4.wav",
+    "category": "footsteps",
+    "description": "Soft cabin boot step, variant 4",
+    "duration": 0.344,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-hello": {
+    "url": "/audio/sfx/pebble-hello.wav",
+    "category": "robot",
+    "description": "Warm Pebble hello cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-happy": {
+    "url": "/audio/sfx/pebble-happy.wav",
+    "category": "robot",
+    "description": "Warm Pebble happy cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-think": {
+    "url": "/audio/sfx/pebble-think.wav",
+    "category": "robot",
+    "description": "Warm Pebble think cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-worried": {
+    "url": "/audio/sfx/pebble-worried.wav",
+    "category": "robot",
+    "description": "Warm Pebble worried cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-reboot": {
+    "url": "/audio/sfx/pebble-reboot.wav",
+    "category": "robot",
+    "description": "Warm Pebble reboot cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-charge": {
+    "url": "/audio/sfx/pebble-charge.wav",
+    "category": "robot",
+    "description": "Warm Pebble charge cue",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-drive": {
+    "url": "/audio/sfx/pebble-drive.wav",
+    "category": "robot",
+    "description": "Quiet rubber tracks and electric motor",
+    "duration": 3.0,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-turn": {
+    "url": "/audio/sfx/pebble-turn.wav",
+    "category": "robot",
+    "description": "Small motor turning adjustment",
+    "duration": 0.55,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-clean": {
+    "url": "/audio/sfx/pebble-clean.wav",
+    "category": "robot",
+    "description": "Gentle rotating brush",
+    "duration": 2.0,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pebble-grip": {
+    "url": "/audio/sfx/pebble-grip.wav",
+    "category": "robot",
+    "description": "Small gripper servo and soft latch",
+    "duration": 0.5,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "ui-click": {
+    "url": "/audio/sfx/ui-click.wav",
+    "category": "interface",
+    "description": "Ui click",
+    "duration": 0.15,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "ui-open": {
+    "url": "/audio/sfx/ui-open.wav",
+    "category": "interface",
+    "description": "Ui open",
+    "duration": 0.5,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "ui-close": {
+    "url": "/audio/sfx/ui-close.wav",
+    "category": "interface",
+    "description": "Ui close",
+    "duration": 0.45,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "ui-confirm": {
+    "url": "/audio/sfx/ui-confirm.wav",
+    "category": "interface",
+    "description": "Ui confirm",
+    "duration": 0.8,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "ui-notice": {
+    "url": "/audio/sfx/ui-notice.wav",
+    "category": "interface",
+    "description": "Ui notice",
+    "duration": 1.1,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "message": {
+    "url": "/audio/sfx/message.wav",
+    "category": "interface",
+    "description": "Message",
+    "duration": 1.2,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "complete": {
+    "url": "/audio/sfx/complete.wav",
+    "category": "interface",
+    "description": "Complete",
+    "duration": 2.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "door": {
+    "url": "/audio/sfx/door.wav",
+    "category": "world",
+    "description": "Padded latch, sliding servo, soft stop",
+    "duration": 1.1,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "airlock": {
+    "url": "/audio/sfx/airlock.wav",
+    "category": "world",
+    "description": "Soft steady pressure equalisation",
+    "duration": 2.4,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "tool": {
+    "url": "/audio/sfx/tool.wav",
+    "category": "world",
+    "description": "Damped metal tool contact",
+    "duration": 0.52,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "switch": {
+    "url": "/audio/sfx/switch.wav",
+    "category": "world",
+    "description": "Soft mechanical switch",
+    "duration": 0.22,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "harvest": {
+    "url": "/audio/sfx/harvest.wav",
+    "category": "world",
+    "description": "Soft leaf and stem rustle",
+    "duration": 0.6,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "landing-entry": {
+    "url": "/audio/sfx/landing-entry.wav",
+    "category": "landing",
+    "description": "Soft low landing entry",
+    "duration": 4.0,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "landing-thrust": {
+    "url": "/audio/sfx/landing-thrust.wav",
+    "category": "landing",
+    "description": "Soft low landing thrust",
+    "duration": 6.0,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "landing-touchdown": {
+    "url": "/audio/sfx/landing-touchdown.wav",
+    "category": "landing",
+    "description": "Cushioned landing and settling",
+    "duration": 1.4,
+    "loop": false,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "hab-ambience": {
+    "url": "/audio/sfx/hab-ambience.wav",
+    "category": "ambience",
+    "description": "Very quiet life-support ventilation",
+    "duration": 8.0,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "suit-ambience": {
+    "url": "/audio/sfx/suit-ambience.wav",
+    "category": "ambience",
+    "description": "Very quiet life-support ventilation",
+    "duration": 8.0,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  },
+  "pale-blue-morning": {
+    "url": "/audio/music/pale-blue-morning.ogg?v=2",
+    "category": "music",
+    "description": "Floating space ambience: slow wide synth clouds, distant glows, no percussion or knocks",
+    "duration": 48.0,
+    "loop": true,
+    "license": "CC0-1.0",
+    "original": true
+  }
+}

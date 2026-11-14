@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "cell": [
+    256,
+    160
+  ],
+  "layout": {
+    "columns": 5,
+    "rows": 2
+  },
+  "expressions": [
+    {
+      "id": "neutral",
+      "name": "Neutral",
+      "file": "/ui/pebble-faces/neutral.svg",
+      "rect": [
+        0,
+        0,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "happy",
+      "name": "Happy",
+      "file": "/ui/pebble-faces/happy.svg",
+      "rect": [
+        256,
+        0,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "very-happy",
+      "name": "Very Happy",
+      "file": "/ui/pebble-faces/very-happy.svg",
+      "rect": [
+        512,
+        0,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "worried",
+      "name": "Worried",
+      "file": "/ui/pebble-faces/worried.svg",
+      "rect": [
+        768,
+        0,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "thinking",
+      "name": "Thinking",
+      "file": "/ui/pebble-faces/thinking.svg",
+      "rect": [
+        1024,
+        0,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "sleepy",
+      "name": "Sleepy",
+      "file": "/ui/pebble-faces/sleepy.svg",
+      "rect": [
+        0,
+        160,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "alarm",
+      "name": "Alarm",
+      "file": "/ui/pebble-faces/alarm.svg",
+      "rect": [
+        256,
+        160,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "static",
+      "name": "Static",
+      "file": "/ui/pebble-faces/static.svg",
+      "rect": [
+        512,
+        160,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "rebooting",
+      "name": "Rebooting",
+      "file": "/ui/pebble-faces/rebooting.svg",
+      "rect": [
+        768,
+        160,
+        256,
+        160
+      ]
+    },
+    {
+      "id": "card-mode",
+      "name": "Card Mode",
+      "file": "/ui/pebble-faces/card-mode.svg",
+      "rect": [
+        1024,
+        160,
+        256,
+        160
+      ]
+    }
+  ]
+}

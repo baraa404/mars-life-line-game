@@ -1,0 +1,648 @@
+{
+  "title": "Mars Life Line \u00b7 sound room",
+  "intro": "Soft, simple audio. Start at a comfortable volume. Compare the original and softened takes; repeated steps rotate through four variants.",
+  "cues": [
+    {
+      "id": "footstep-regolith-1",
+      "name": "Footstep Regolith 1",
+      "brief": "Soft regolith boot step, variant 1",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/footstep-regolith-1.wav",
+            "renders/pass-1/footstep-regolith-2.wav",
+            "renders/pass-1/footstep-regolith-3.wav",
+            "renders/pass-1/footstep-regolith-4.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/footstep-regolith-1.wav",
+            "renders/pass-2/footstep-regolith-2.wav",
+            "renders/pass-2/footstep-regolith-3.wav",
+            "renders/pass-2/footstep-regolith-4.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footstep-cabin-1",
+      "name": "Footstep Cabin 1",
+      "brief": "Soft cabin boot step, variant 1",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/footstep-cabin-1.wav",
+            "renders/pass-1/footstep-cabin-2.wav",
+            "renders/pass-1/footstep-cabin-3.wav",
+            "renders/pass-1/footstep-cabin-4.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/footstep-cabin-1.wav",
+            "renders/pass-2/footstep-cabin-2.wav",
+            "renders/pass-2/footstep-cabin-3.wav",
+            "renders/pass-2/footstep-cabin-4.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-hello",
+      "name": "Pebble Hello",
+      "brief": "Warm Pebble hello cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-hello.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-hello.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-happy",
+      "name": "Pebble Happy",
+      "brief": "Warm Pebble happy cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-happy.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-happy.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-think",
+      "name": "Pebble Think",
+      "brief": "Warm Pebble think cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-think.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-think.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-worried",
+      "name": "Pebble Worried",
+      "brief": "Warm Pebble worried cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-worried.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-worried.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-reboot",
+      "name": "Pebble Reboot",
+      "brief": "Warm Pebble reboot cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-reboot.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-reboot.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-charge",
+      "name": "Pebble Charge",
+      "brief": "Warm Pebble charge cue",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-charge.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-charge.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-drive",
+      "name": "Pebble Drive",
+      "brief": "Quiet rubber tracks and electric motor",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-drive.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-drive.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-turn",
+      "name": "Pebble Turn",
+      "brief": "Small motor turning adjustment",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-turn.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-turn.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-clean",
+      "name": "Pebble Clean",
+      "brief": "Gentle rotating brush",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-clean.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-clean.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pebble-grip",
+      "name": "Pebble Grip",
+      "brief": "Small gripper servo and soft latch",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pebble-grip.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pebble-grip.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ui-click",
+      "name": "Ui Click",
+      "brief": "Ui click",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/ui-click.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/ui-click.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ui-open",
+      "name": "Ui Open",
+      "brief": "Ui open",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/ui-open.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/ui-open.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ui-close",
+      "name": "Ui Close",
+      "brief": "Ui close",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/ui-close.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/ui-close.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ui-confirm",
+      "name": "Ui Confirm",
+      "brief": "Ui confirm",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/ui-confirm.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/ui-confirm.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ui-notice",
+      "name": "Ui Notice",
+      "brief": "Ui notice",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/ui-notice.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/ui-notice.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "message",
+      "name": "Message",
+      "brief": "Message",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/message.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/message.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "complete",
+      "name": "Complete",
+      "brief": "Complete",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/complete.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/complete.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "door",
+      "name": "Door",
+      "brief": "Padded latch, sliding servo, soft stop",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/door.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/door.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airlock",
+      "name": "Airlock",
+      "brief": "Soft steady pressure equalisation",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/airlock.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/airlock.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tool",
+      "name": "Tool",
+      "brief": "Damped metal tool contact",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/tool.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/tool.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "brief": "Soft mechanical switch",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/switch.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/switch.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest",
+      "brief": "Soft leaf and stem rustle",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/harvest.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/harvest.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landing-entry",
+      "name": "Landing Entry",
+      "brief": "Soft low landing entry",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/landing-entry.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/landing-entry.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landing-thrust",
+      "name": "Landing Thrust",
+      "brief": "Soft low landing thrust",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/landing-thrust.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/landing-thrust.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "landing-touchdown",
+      "name": "Landing Touchdown",
+      "brief": "Cushioned landing and settling",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/landing-touchdown.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/landing-touchdown.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hab-ambience",
+      "name": "Hab Ambience",
+      "brief": "Very quiet life-support ventilation",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/hab-ambience.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/hab-ambience.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suit-ambience",
+      "name": "Suit Ambience",
+      "brief": "Very quiet life-support ventilation",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/suit-ambience.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/suit-ambience.wav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pale-blue-morning",
+      "name": "Pale Blue Morning",
+      "brief": "Floating space ambience: slow wide synth clouds, distant glows, no percussion or knocks",
+      "takes": [
+        {
+          "label": "First pass",
+          "note": "Layered original synthesis",
+          "files": [
+            "renders/pass-1/pale-blue-morning.wav"
+          ]
+        },
+        {
+          "label": "Softened",
+          "note": "Gentler upper mids and restrained texture",
+          "files": [
+            "renders/pass-2/pale-blue-morning.wav"
+          ]
+        }
+      ]
+    }
+  ]
+}

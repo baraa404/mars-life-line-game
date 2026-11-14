@@ -1,0 +1,999 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_184aaa4c314c4984b784cc3266e63de7",
+  "revisionId": "r_83a9718e822744febbe83877c1bbc9e8",
+  "name": "astronaut-fp-arms",
+  "tags": [],
+  "createdAt": "2026-11-12T22:39:59.313Z",
+  "description": "Reference-matched Phase 3 model and native clips; brief assets/briefs/astronaut-fp-arms.md",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:27e2f68dda99cbab8efde0299cd917098f194aa044e7caffbe7d0914e3c0fabe",
+      "bytes": 74624
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:7da096b9b9222f5f5de6ab7c46e8dcf1c97be3eb1685bd1c2bfe2a4fce2b9d2f",
+      "bytes": 14212
+    },
+    "preview.png": {
+      "sha256": "sha256:c93abb94764f00928d702aa13adf64169ba919cc74f0f89f4d8f36d3d56c48a9",
+      "bytes": 59501
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "27e2f68dda99cbab8efde0299cd917098f194aa044e7caffbe7d0914e3c0fabe",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -5.9604645663569045e-9,
+          0.06013906359672548,
+          -0.35499999672174454
+        ],
+        "max": [
+          0.5880000000447035,
+          0.29460000146925447,
+          0.35499999672174454
+        ],
+        "size": [
+          0.5880000060051681,
+          0.23446093787252897,
+          0.7099999934434891
+        ],
+        "center": [
+          0.2939999970421195,
+          0.17736953253298998,
+          0
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 0.06013906359672548,
+        "offsetToGround": -0.06013906359672548,
+        "grounded": false
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "astronaut-fp-arms"
+      },
+      "renderMetrics": {
+        "triangles": 1852,
+        "drawCalls": 33,
+        "uniqueGeometries": 14,
+        "uniqueMaterials": 7,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 8000
+            },
+            "measured": {
+              "triangles": 1852
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "warn",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "warn",
+          "findings": [
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Orange elbow pad\".",
+              "affected": {
+                "node": "Orange elbow pad",
+                "nodePath": "astronaut-fp-arms/arm_l/Orange elbow pad | astronaut-fp-arms/arm_r/Orange elbow pad"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Ivory faceted wrist cuff\".",
+              "affected": {
+                "node": "Ivory faceted wrist cuff",
+                "nodePath": "astronaut-fp-arms/arm_l/wrist_l/Ivory faceted wrist cuff | astronaut-fp-arms/arm_r/wrist_r/Ivory faceted wrist cuff"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Slate glove palm\".",
+              "affected": {
+                "node": "Slate glove palm",
+                "nodePath": "astronaut-fp-arms/arm_l/wrist_l/hand_l/Slate glove palm | astronaut-fp-arms/arm_r/wrist_r/hand_r/Slate glove palm"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "8 scene nodes share the name \"Finger proximal\".",
+              "affected": {
+                "node": "Finger proximal",
+                "nodePath": "astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_0/Finger proximal | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_1/Finger proximal | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_2/Finger proximal | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_3/Finger proximal | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_0/Finger proximal | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_1/Finger proximal | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_2/Finger proximal | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_3/Finger proximal"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 8,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "8 scene nodes share the name \"Finger tip\".",
+              "affected": {
+                "node": "Finger tip",
+                "nodePath": "astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_0/tip_l_0/Finger tip | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_1/tip_l_1/Finger tip | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_2/tip_l_2/Finger tip | astronaut-fp-arms/arm_l/wrist_l/hand_l/finger_l_3/tip_l_3/Finger tip | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_0/tip_r_0/Finger tip | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_1/tip_r_1/Finger tip | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_2/tip_r_2/Finger tip | astronaut-fp-arms/arm_r/wrist_r/hand_r/finger_r_3/tip_r_3/Finger tip"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 8,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Glove thumb\".",
+              "affected": {
+                "node": "Glove thumb",
+                "nodePath": "astronaut-fp-arms/arm_l/wrist_l/hand_l/thumb_l/Glove thumb | astronaut-fp-arms/arm_r/wrist_r/hand_r/thumb_r/Glove thumb"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            }
+          ]
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "pass",
+          "findings": [
+            {
+              "code": "GEO_PART_CONNECTIVITY",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.partConnectivity",
+              "message": "A group of 15 parts (\"Orange elbow pad\", \"Ivory faceted wrist cuff\", \"Slate glove palm\", \"Finger proximal\", \"Finger tip\", \"Finger proximal\", \"Finger tip\", \"Finger proximal\", \"Finger tip\", \"Finger proximal\", \"Finger tip\", \"Glove thumb\", +3 more) is separate from the largest component in the rest-pose bounding boxes of visible parts; the nearest box gap is 0.287 m. This may be intentional. Box adjacency is not physical attachment evidence: a gap under 0.02 m reads as contact.",
+              "affected": {
+                "node": "Orange elbow pad"
+              },
+              "measurement": {
+                "name": "gapToMainComponent",
+                "actual": 0.287,
+                "expected": 0.02
+              },
+              "repairText": "Check whether the separation is intentional. If the brief requires attachment, inspect the named group and its intended interface before moving it. snapTo aligns bounding boxes; verify actual surfaces and required clearances afterward."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory raised bezel\" and \"wrist_data_pad_accent-paint\" occupy the same space: they share 0.00000803 m³, which is 57.5% of the smaller part.",
+              "affected": {
+                "node": "Ivory raised bezel"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.575244812,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory faceted wrist cuff\" and \"Strap\" occupy the same space: they share 0.0000524 m³, which is 29.8% of the smaller part.",
+              "affected": {
+                "node": "Ivory faceted wrist cuff"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.297865567,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000164 m³, which is 26.1% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.260627478,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000164 m³, which is 26.1% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.260627478,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000164 m³, which is 26.1% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.260627478,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000164 m³, which is 26.1% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.260627478,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory faceted wrist cuff\" and \"arm_l_smooth-structure\" occupy the same space: they share 0.000593 m³, which is 22.4% of the smaller part.",
+              "affected": {
+                "node": "Ivory faceted wrist cuff"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.223559203,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory faceted wrist cuff\" and \"arm_r_smooth-structure\" occupy the same space: they share 0.000593 m³, which is 22.4% of the smaller part.",
+              "affected": {
+                "node": "Ivory faceted wrist cuff"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.223559203,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Strap\" and \"Slate pad base\" occupy the same space: they share 0.0000361 m³, which is 20.5% of the smaller part.",
+              "affected": {
+                "node": "Strap"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.205183999,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000103 m³, which is 16.3% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.163000473,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000103 m³, which is 16.3% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.163000473,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000103 m³, which is 16.3% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.163000473,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Finger proximal\" occupy the same space: they share 0.0000103 m³, which is 16.3% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.163000473,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate pad base\" and \"Ivory raised bezel\" occupy the same space: they share 0.0000178 m³, which is 15.5% of the smaller part.",
+              "affected": {
+                "node": "Slate pad base"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.155176309,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Blue inset screen\" and \"wrist_data_pad_emissive-cool\" occupy the same space: they share 4.76e-8 m³, which is 15.1% of the smaller part.",
+              "affected": {
+                "node": "Blue inset screen"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.150821672,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Blue inset screen\" and \"Screen data bar 2\" occupy the same space: they share 1.67e-8 m³, which is 15.0% of the smaller part.",
+              "affected": {
+                "node": "Blue inset screen"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.150383854,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Orange elbow pad\" and \"arm_l_smooth-structure\" occupy the same space: they share 0.0000468 m³, which is 8.9% of the smaller part.",
+              "affected": {
+                "node": "Orange elbow pad"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.088536534,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Orange elbow pad\" and \"arm_r_smooth-structure\" occupy the same space: they share 0.0000468 m³, which is 8.9% of the smaller part.",
+              "affected": {
+                "node": "Orange elbow pad"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.088536534,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Strap\" and \"arm_l_smooth-structure\" occupy the same space: they share 0.0000128 m³, which is 7.3% of the smaller part.",
+              "affected": {
+                "node": "Strap"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.072598128,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Finger proximal\" and \"Finger tip\" occupy the same space: they share 0.00000247 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Finger proximal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062306937,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Blue inset screen\" and \"wrist_data_pad_accent-paint\" occupy the same space: they share 3.43e-7 m³, which is 2.8% of the smaller part.",
+              "affected": {
+                "node": "Blue inset screen"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.027660099,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Glove thumb\" occupy the same space: they share 8.30e-7 m³, which is 0.7% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.007434845,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Slate glove palm\" and \"Glove thumb\" occupy the same space: they share 8.30e-7 m³, which is 0.7% of the smaller part.",
+              "affected": {
+                "node": "Slate glove palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.007434845,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "complete-static-pairs",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 33,
+            "partVolumeCandidatePairs": 32,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 32,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 0,
+            "openSurfaceClosedParts": 33,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "D",
+            "instanceabilitySummary": "D (informational, not a QA verdict), set by 7 distinct materials (D at 7-12). Also: 14 geometries; 33 draw calls. Optional advice, not a requirement: merging accent-paint + smooth-structure + smooth-structure:structure-gray + dark-trim and 1 more (differ in baseColorFactor, metallicFactor, roughnessFactor); emissive-warm + emissive-cool (differ in baseColorFactor, emissiveFactor, KHR_materials_emissive_strength) would leave 2 materials (B at 2-3).",
+            "uniqueGeometries": 14,
+            "uniqueMaterials": 7,
+            "meshNodes": 33,
+            "meshInstances": 33,
+            "drawCalls": 33,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 1852,
+            "materialCount": 7,
+            "opaqueMaterials": 7,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 7,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 1,
+            "materialExtensionsUsed": "KHR_materials_emissive_strength",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:27e2f68dda99cbab8efde0299cd917098f194aa044e7caffbe7d0914e3c0fabe",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

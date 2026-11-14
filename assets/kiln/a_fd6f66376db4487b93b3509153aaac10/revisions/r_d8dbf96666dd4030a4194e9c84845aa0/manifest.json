@@ -1,0 +1,434 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_fd6f66376db4487b93b3509153aaac10",
+  "revisionId": "r_d8dbf96666dd4030a4194e9c84845aa0",
+  "name": "mesa-distant",
+  "tags": [],
+  "createdAt": "2026-11-12T19:15:51.262Z",
+  "description": "Phase 2 reference-matched mesa-distant; editable source and review notes in assets/briefs/mesa-distant.md.",
+  "brief": "Only visual reference: /home/baraa/chaos box/projects/Personal Projects/Docs/models and assets images/phase-2/mesa-distant.png. Follow this individual image; no other visual reference. Catalog scale and semantic node requirements apply. Reference reviewed as valid without regeneration.",
+  "attribution": {
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:4497268f5013d0c5a6f867a25ba72a45ce8ae68c5c775a76053c069494f0953e",
+      "bytes": 205996
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:3d96955ea8b5fa721ba0db8053f9ed69125bf3af4ba41e676b060ebf653b2761",
+      "bytes": 12044
+    },
+    "preview.png": {
+      "sha256": "sha256:6417816e0e258bba8fbcd24a60a24bd36d31441e4d9bfd379e562afca86d9f41",
+      "bytes": 40082
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [
+      "Floating parts (no mesh overlap with any sibling, 2cm tol): mesa_variant_1 — Fix: shift \"mesa_variant_1\" by [9.534, 0.000, 0.000] toward \"mesa_variant_2\", or call snapTo(part, hostPart) to do it automatically. | mesa_variant_2 — Fix: shift \"mesa_variant_2\" by [-9.534, 0.000, 0.000] toward \"mesa_variant_1\", or call snapTo(part, hostPart) to do it automatically. | mesa_variant_3 — Fix: shift \"mesa_variant_3\" by [-14.151, 0.000, 0.000] toward \"mesa_variant_2\", or call snapTo(part, hostPart) to do it automatically. — Coverage: drawn meshes only, at 2cm. Welded components inside one mesh are compared the same way, box to box. A smaller gap reads as contact, so a silent pass is not a fit audit; measure contacts in the destination."
+    ],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "4497268f5013d0c5a6f867a25ba72a45ce8ae68c5c775a76053c069494f0953e",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -154.1550407409668,
+          0,
+          -39.85137939453125
+        ],
+        "max": [
+          155.0678367614746,
+          31.277957916259766,
+          31.661693572998047
+        ],
+        "size": [
+          309.2228775024414,
+          31.277957916259766,
+          71.5130729675293
+        ],
+        "center": [
+          0.45639801025390625,
+          15.638978958129883,
+          -4.094842910766602
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 0,
+        "offsetToGround": 0,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "mesa-distant"
+      },
+      "renderMetrics": {
+        "triangles": 1848,
+        "drawCalls": 3,
+        "uniqueGeometries": 3,
+        "uniqueMaterials": 1,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 12000
+            },
+            "measured": {
+              "triangles": 1848
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "pass",
+          "findings": [
+            {
+              "code": "GEO_PART_CONNECTIVITY",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.partConnectivity",
+              "message": "Part \"mesa_variant_2\" is separate from the largest component in the rest-pose bounding boxes of visible parts; the nearest box gap is 9.534 m. This may be intentional. Box adjacency is not physical attachment evidence: a gap under 0.02 m reads as contact.",
+              "affected": {
+                "node": "mesa_variant_2"
+              },
+              "measurement": {
+                "name": "gapToMainComponent",
+                "actual": 9.533714,
+                "expected": 0.02
+              },
+              "repairText": "Check whether the separation is intentional. If the brief requires attachment, inspect the named group and its intended interface before moving it. snapTo aligns bounding boxes; verify actual surfaces and required clearances afterward."
+            },
+            {
+              "code": "GEO_PART_CONNECTIVITY",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.partConnectivity",
+              "message": "Part \"mesa_variant_3\" is separate from the largest component in the rest-pose bounding boxes of visible parts; the nearest box gap is 126.515 m. This may be intentional. Box adjacency is not physical attachment evidence: a gap under 0.02 m reads as contact.",
+              "affected": {
+                "node": "mesa_variant_3"
+              },
+              "measurement": {
+                "name": "gapToMainComponent",
+                "actual": 126.514935,
+                "expected": 0.02
+              },
+              "repairText": "Check whether the separation is intentional. If the brief requires attachment, inspect the named group and its intended interface before moving it. snapTo aligns bounding boxes; verify actual surfaces and required clearances afterward."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "complete-static-pairs",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 3,
+            "partVolumeCandidatePairs": 0,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 0,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 0,
+            "openSurfaceClosedParts": 3,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "A",
+            "instanceabilitySummary": "A (informational, not a QA verdict), set by 1 distinct material (A at 0-1). Also: 3 geometries; 3 draw calls.",
+            "uniqueGeometries": 3,
+            "uniqueMaterials": 1,
+            "meshNodes": 3,
+            "meshInstances": 3,
+            "drawCalls": 3,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 1848,
+            "materialCount": 1,
+            "opaqueMaterials": 1,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 1,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "geometry-flat",
+      "materialFaithful": false,
+      "exactArtifact": true,
+      "rendererId": "cpu-raster:1.7.0",
+      "inputGlbSha256": "sha256:4497268f5013d0c5a6f867a25ba72a45ce8ae68c5c775a76053c069494f0953e",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

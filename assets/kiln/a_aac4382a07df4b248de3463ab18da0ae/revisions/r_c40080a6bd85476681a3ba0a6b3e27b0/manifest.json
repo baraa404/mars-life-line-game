@@ -1,0 +1,1361 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_aac4382a07df4b248de3463ab18da0ae",
+  "revisionId": "r_c40080a6bd85476681a3ba0a6b3e27b0",
+  "parentRevision": "r_819a2302d3e94039b493787f87f8f8b1",
+  "name": "young-astronaut",
+  "tags": [],
+  "createdAt": "2026-11-12T22:42:14.530Z",
+  "description": "Reference-matched Phase 3 model and native clips; brief assets/briefs/young-astronaut.md",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:a96f104b7bdbb889b4ff8dad203f28a2ceba694c07a77643ad37fc97a8ee5260",
+      "bytes": 126696
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:eb00e53709d8681243d5d32e3fa2e389028b4dbc0c5ccd17337ec7d18bdc2786",
+      "bytes": 11132
+    },
+    "preview.png": {
+      "sha256": "sha256:46a382f851407717fd93a889de638338fefe54c70bc76ba4eb1de124fd24879d",
+      "bytes": 232850
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "a96f104b7bdbb889b4ff8dad203f28a2ceba694c07a77643ad37fc97a8ee5260",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -0.47469512233556044,
+          -4.088732338813905e-10,
+          -0.5423305229450261
+        ],
+        "max": [
+          0.40170731707317076,
+          1.8000000000000003,
+          0.5423305229450261
+        ],
+        "size": [
+          0.8764024394087312,
+          1.8000000004088734,
+          1.0846610458900523
+        ],
+        "center": [
+          -0.03649390263119484,
+          0.8999999997955636,
+          0
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": -4.088732338813905e-10,
+        "offsetToGround": 4.088732338813905e-10,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "Young Astronaut"
+      },
+      "renderMetrics": {
+        "triangles": 6088,
+        "drawCalls": 77,
+        "uniqueGeometries": 43,
+        "uniqueMaterials": 6,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 8000
+            },
+            "measured": {
+              "triangles": 6088
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_PressureCollar\" and \"Mesh_HelmetShell\" occupy the same space: they share 0.0113 m³, which is 100.0% of the smaller part.",
+              "affected": {
+                "node": "Mesh_PressureCollar"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.999998499,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_VisorGasket\" and \"Mesh_NavyVisor\" occupy the same space: they share 0.0551 m³, which is 97.0% of the smaller part.",
+              "affected": {
+                "node": "Mesh_VisorGasket"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.970158273,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftBoot\" and \"Mesh_LeftToeCap\" occupy the same space: they share 0.00304 m³, which is 95.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.958032145,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightBoot\" and \"Mesh_RightToeCap\" occupy the same space: they share 0.00304 m³, which is 95.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.958032145,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftForearm\" and \"Mesh_LeftCuff\" occupy the same space: they share 0.00213 m³, which is 75.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftForearm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.75255069,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightForearm\" and \"Mesh_RightCuff\" occupy the same space: they share 0.00213 m³, which is 75.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightForearm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.75255069,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftElbowSeal\" and \"Mesh_LeftElbowBand\" occupy the same space: they share 0.00198 m³, which is 72.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftElbowSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.722168681,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightElbowSeal\" and \"Mesh_RightElbowBand\" occupy the same space: they share 0.00198 m³, which is 72.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightElbowSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.722168681,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftBoot\" and \"Mesh_LeftSole\" occupy the same space: they share 0.00421 m³, which is 71.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.71165462,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightBoot\" and \"Mesh_RightSole\" occupy the same space: they share 0.00421 m³, which is 71.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.71165462,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LifeSupportFrame\" and \"Mesh_LifeSupportShell\" occupy the same space: they share 0.0122 m³, which is 67.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LifeSupportFrame"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.671788799,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightGlovePalm\" and \"Mesh_RightFinger1\" occupy the same space: they share 0.000128 m³, which is 67.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.671147032,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftGlovePalm\" and \"Mesh_LeftFinger1\" occupy the same space: they share 0.000128 m³, which is 67.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.67114703,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftBoot\" and \"Mesh_LeftBootUpper\" occupy the same space: they share 0.00650 m³, which is 66.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.668107668,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightBoot\" and \"Mesh_RightBootUpper\" occupy the same space: they share 0.00650 m³, which is 66.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightBoot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.668107668,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_HelmetShell\" and \"Mesh_VisorGasket\" occupy the same space: they share 0.0410 m³, which is 62.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_HelmetShell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.622412777,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftShoulderSeal\" and \"Mesh_LeftUpperSleeve\" occupy the same space: they share 0.00627 m³, which is 60.4% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.603776934,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightShoulderSeal\" and \"Mesh_RightUpperSleeve\" occupy the same space: they share 0.00627 m³, which is 60.4% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.603776934,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_HelmetShell\" and \"Mesh_NavyVisor\" occupy the same space: they share 0.0330 m³, which is 58.0% of the smaller part.",
+              "affected": {
+                "node": "Mesh_HelmetShell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.580256897,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_SuitTorso\" and \"Mesh_WaistBelt\" occupy the same space: they share 0.00962 m³, which is 57.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_SuitTorso"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.571311801,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_PaddedHips\" and \"Mesh_WaistBelt\" occupy the same space: they share 0.00954 m³, which is 56.6% of the smaller part.",
+              "affected": {
+                "node": "Mesh_PaddedHips"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.566336575,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperSleeve\" and \"Mesh_LeftElbowSeal\" occupy the same space: they share 0.00173 m³, which is 52.4% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.52372873,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperSleeve\" and \"Mesh_RightElbowSeal\" occupy the same space: they share 0.00173 m³, which is 52.4% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.52372873,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftBootUpper\" and \"Mesh_LeftShin\" occupy the same space: they share 0.00494 m³, which is 50.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftBootUpper"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.507913465,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightBootUpper\" and \"Mesh_RightShin\" occupy the same space: they share 0.00494 m³, which is 50.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightBootUpper"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.507913465,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftElbowBand\" and \"Mesh_LeftForearm\" occupy the same space: they share 0.00137 m³, which is 50.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftElbowBand"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.501228503,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightElbowBand\" and \"Mesh_RightForearm\" occupy the same space: they share 0.00137 m³, which is 50.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightElbowBand"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.501228503,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftElbowSeal\" and \"Mesh_LeftForearm\" occupy the same space: they share 0.00165 m³, which is 50.0% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftElbowSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.500258698,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightElbowSeal\" and \"Mesh_RightForearm\" occupy the same space: they share 0.00165 m³, which is 50.0% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightElbowSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.500258698,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperLeg\" and \"Mesh_RightThighPocket\" occupy the same space: they share 0.000209 m³, which is 49.6% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.495534049,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperLeg\" and \"Mesh_LeftThighPocket\" occupy the same space: they share 0.000209 m³, which is 49.6% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.495534048,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftShoulderPad\" and \"Mesh_LeftShoulderFrontPad\" occupy the same space: they share 0.000513 m³, which is 48.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftShoulderPad"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.488329526,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightShoulderPad\" and \"Mesh_RightShoulderFrontPad\" occupy the same space: they share 0.000513 m³, which is 48.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightShoulderPad"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.488329526,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftGlovePalm\" and \"Mesh_LeftFinger2\" occupy the same space: they share 0.0000871 m³, which is 45.7% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.456958629,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightGlovePalm\" and \"Mesh_RightFinger0\" occupy the same space: they share 0.0000871 m³, which is 45.7% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.456958628,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightGlovePalm\" and \"Mesh_RightFinger2\" occupy the same space: they share 0.0000871 m³, which is 45.7% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.456958574,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftGlovePalm\" and \"Mesh_LeftFinger0\" occupy the same space: they share 0.0000871 m³, which is 45.7% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.456958573,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftShoulderSeal\" and \"Mesh_LeftShoulderPad\" occupy the same space: they share 0.00147 m³, which is 42.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.425430439,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightShoulderSeal\" and \"Mesh_RightShoulderPad\" occupy the same space: they share 0.00147 m³, which is 42.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.425430439,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_PaddedHips\" and \"Mesh_LeftUpperLeg\" occupy the same space: they share 0.00609 m³, which is 38.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_PaddedHips"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.387739105,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_PaddedHips\" and \"Mesh_RightUpperLeg\" occupy the same space: they share 0.00609 m³, which is 38.8% of the smaller part.",
+              "affected": {
+                "node": "Mesh_PaddedHips"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.387739105,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_SuitTorso\" and \"Mesh_PressureCollar\" occupy the same space: they share 0.00429 m³, which is 37.9% of the smaller part.",
+              "affected": {
+                "node": "Mesh_SuitTorso"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.378734011,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperSleeve\" and \"Mesh_LeftShoulderPad\" occupy the same space: they share 0.00129 m³, which is 37.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.374938715,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperSleeve\" and \"Mesh_RightShoulderPad\" occupy the same space: they share 0.00129 m³, which is 37.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.374938713,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftGlovePalm\" and \"Mesh_LeftThumb\" occupy the same space: they share 0.000121 m³, which is 32.6% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.325591766,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightGlovePalm\" and \"Mesh_RightThumb\" occupy the same space: they share 0.000121 m³, which is 32.6% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightGlovePalm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.325591766,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperSleeve\" and \"Mesh_LeftElbowBand\" occupy the same space: they share 0.000885 m³, which is 32.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.323477222,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperSleeve\" and \"Mesh_RightElbowBand\" occupy the same space: they share 0.000885 m³, which is 32.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.323477222,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperLeg\" and \"Mesh_LeftKneeBand\" occupy the same space: they share 0.00140 m³, which is 32.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.321253666,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperLeg\" and \"Mesh_RightKneeBand\" occupy the same space: they share 0.00140 m³, which is 32.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.321253666,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_HelmetShell\" and \"Mesh_HelmetPuckBase-1\" occupy the same space: they share 0.000532 m³, which is 29.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_HelmetShell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.294733257,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_HelmetShell\" and \"Mesh_HelmetPuckBase1\" occupy the same space: they share 0.000532 m³, which is 29.5% of the smaller part.",
+              "affected": {
+                "node": "Mesh_HelmetShell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.294733257,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightShoulderSeal\" and \"Mesh_RightShoulderFrontPad\" occupy the same space: they share 0.000277 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.263397941,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftShoulderSeal\" and \"Mesh_LeftShoulderFrontPad\" occupy the same space: they share 0.000277 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftShoulderSeal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.263397938,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperSleeve\" and \"Mesh_RightShoulderFrontPad\" occupy the same space: they share 0.000220 m³, which is 20.9% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.209041087,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperSleeve\" and \"Mesh_LeftShoulderFrontPad\" occupy the same space: they share 0.000220 m³, which is 20.9% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperSleeve"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.209041076,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_VisorGasket\" and \"Mesh_ChinLatch\" occupy the same space: they share 0.0000184 m³, which is 6.2% of the smaller part.",
+              "affected": {
+                "node": "Mesh_VisorGasket"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.062135316,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_LeftUpperLeg\" and \"Mesh_LeftKneePad\" occupy the same space: they share 0.0000168 m³, which is 1.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_LeftUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.011387114,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Mesh_RightUpperLeg\" and \"Mesh_RightKneePad\" occupy the same space: they share 0.0000168 m³, which is 1.1% of the smaller part.",
+              "affected": {
+                "node": "Mesh_RightUpperLeg"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.011387114,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_TRUNCATED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Tested 64 of 196 overlapping part pairs: 0 involve parts that could not be measured, 132 were beyond the analysis budget (64 booleans, 128 solids). Unreached pairs were not examined; the most overlapping bounding boxes were tested first.",
+              "measurement": {
+                "name": "overlappingPartPairsTested",
+                "actual": 64,
+                "expected": 196,
+                "breakdown": {
+                  "pairsUnmeasurable": 0,
+                  "pairsNotReached": 132
+                }
+              }
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 77,
+            "partVolumeCandidatePairs": 196,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 64,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 132,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 0,
+            "openSurfaceClosedParts": 77,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 6 distinct materials (C at 4-6). Also: 43 geometries; 77 draw calls. Optional advice, not a requirement: merging smooth-structure + accent-paint + smooth-structure:structure-gray + dark-trim and 1 more (differ in baseColorFactor, metallicFactor, roughnessFactor) would leave 2 materials (B at 2-3).",
+            "uniqueGeometries": 43,
+            "uniqueMaterials": 6,
+            "meshNodes": 77,
+            "meshInstances": 77,
+            "drawCalls": 77,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 6088,
+            "materialCount": 6,
+            "opaqueMaterials": 6,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 6,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 1,
+            "materialExtensionsUsed": "KHR_materials_emissive_strength",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:a96f104b7bdbb889b4ff8dad203f28a2ceba694c07a77643ad37fc97a8ee5260",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

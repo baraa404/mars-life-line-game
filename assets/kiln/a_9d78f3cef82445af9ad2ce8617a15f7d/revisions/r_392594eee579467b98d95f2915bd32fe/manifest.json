@@ -1,0 +1,527 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_9d78f3cef82445af9ad2ce8617a15f7d",
+  "revisionId": "r_392594eee579467b98d95f2915bd32fe",
+  "name": "cable-run-t",
+  "tags": [
+    "phase-2",
+    "image-matched",
+    "support-batch"
+  ],
+  "createdAt": "2026-11-12T21:26:31.672Z",
+  "description": "Reference-matched model for Mars Life Line; source, review and game-ready derivative retained.",
+  "brief": "Image-matched Phase 2 asset. Sole visual reference: models and assets images/phase-2/cable-run.png. Full brief: assets/briefs/cable-run-t.md. Metres, +Y up, +X forward. Preserve named semantic groups. Static model; gameplay and final world placement are separate.",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:965a976bd1de411d54202d83507b0915f35be3030231163537354150ddabd60a",
+      "bytes": 19792
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:65fea91d3cbcdf2e1a964cbe52e9a241347b8cbf8b7318dceaf0130b1b8b3eeb",
+      "bytes": 11343
+    },
+    "preview.png": {
+      "sha256": "sha256:1a10a77af42478d4aaf98245787e4fa0daf9068f3ee102c6ba97fa4808a31990",
+      "bytes": 22944
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "965a976bd1de411d54202d83507b0915f35be3030231163537354150ddabd60a",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -1.1020000000521541,
+          0,
+          -0.3149999976158142
+        ],
+        "max": [
+          1.1020000000521541,
+          0.3779999955892563,
+          1.1020000000521541
+        ],
+        "size": [
+          2.2040000001043083,
+          0.3779999955892563,
+          1.4169999976679684
+        ],
+        "center": [
+          0,
+          0.18899999779462814,
+          0.39350000121816997
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 0,
+        "offsetToGround": 0,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "cable-run-t"
+      },
+      "renderMetrics": {
+        "triangles": 596,
+        "drawCalls": 10,
+        "uniqueGeometries": 4,
+        "uniqueMaterials": 4,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 1500
+            },
+            "measured": {
+              "triangles": 596
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "warn",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "warn",
+          "findings": [
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "3 scene nodes share the name \"Thick slate end collar\".",
+              "affected": {
+                "node": "Thick slate end collar",
+                "nodePath": "cable-run-t/connector_1/Thick slate end collar | cable-run-t/connector_2/Thick slate end collar | cable-run-t/connector_3/Thick slate end collar"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 3,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "3 scene nodes share the name \"Orange fastening band\".",
+              "affected": {
+                "node": "Orange fastening band",
+                "nodePath": "cable-run-t/connector_1/Orange fastening band | cable-run-t/connector_2/Orange fastening band | cable-run-t/connector_3/Orange fastening band"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 3,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "3 scene nodes share the name \"Terminal inset\".",
+              "affected": {
+                "node": "Terminal inset",
+                "nodePath": "cable-run-t/connector_1/Terminal inset | cable-run-t/connector_2/Terminal inset | cable-run-t/connector_3/Terminal inset"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 3,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            }
+          ]
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_UNMEASURED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "1 part-volume measurement was unavailable. 1 because a valid closed solid could not be measured (Not manifold): \"cable-run-t_smooth-structure\". 6 overlapping part pairs include this part and were not measured. This part is not certified clear."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"cable-run-t_smooth-structure\" reaches 0.0180 m inside solid \"Thick slate end collar\": 32 of 168 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "cable-run-t_smooth-structure"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0179999813,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 32,
+                  "sampledVertices": 168
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"cable-run-t_smooth-structure\" reaches 0.0180 m inside solid \"Thick slate end collar\": 32 of 168 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "cable-run-t_smooth-structure"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0179999813,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 32,
+                  "sampledVertices": 168
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"cable-run-t_smooth-structure\" reaches 0.0180 m inside solid \"Thick slate end collar\": 32 of 168 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "cable-run-t_smooth-structure"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0179999813,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 32,
+                  "sampledVertices": 168
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 10,
+            "partVolumeCandidatePairs": 9,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 3,
+            "partVolumeUnmeasurablePairs": 6,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 1,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 1,
+            "openSurfaceClosedParts": 9,
+            "openSurfaceCandidatePairs": 6,
+            "openSurfacePairsSampled": 6,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 4 distinct materials (C at 4-6). Also: 4 geometries; 10 draw calls. Optional advice, not a requirement: merging smooth-structure:structure-gray + accent-paint + dark-trim + smooth-structure (differ in baseColorFactor, metallicFactor, roughnessFactor) would leave 1 material (A at 0-1).",
+            "uniqueGeometries": 4,
+            "uniqueMaterials": 4,
+            "meshNodes": 10,
+            "meshInstances": 10,
+            "drawCalls": 10,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 596,
+            "materialCount": 4,
+            "opaqueMaterials": 4,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 4,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:965a976bd1de411d54202d83507b0915f35be3030231163537354150ddabd60a",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

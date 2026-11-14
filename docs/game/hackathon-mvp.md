@@ -1,0 +1,134 @@
+# Hackathon MVP — "7 Sols" outpost game
+
+> **Superseded** by [Mars: Mission Critical](mission-critical.md), the 10-minute story game.
+> This plan's code is archived in `archive/seven-sols/`; the site picker, base layout,
+> station models and NASA data described here are still used.
+
+Target: NASA Space Apps 2026, [Build a Junior Astronaut Mission Trainer](https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/).
+The brief asks for a game where students run a Martian outpost and balance **life support,
+radiation shielding, power and food**, so they experience the decisions that make a mission
+succeed or fail. This plan replaces the long M0–M12 campaign as the playable game. The
+campaign docs remain as future design.
+
+## What the old build lacked
+
+| Challenge need | Before | MVP answer |
+| --- | --- | --- |
+| Short session | Open-ended, 1 real second = 1 Mars minute | 7 sols, about 10 minutes |
+| Food production | Planned only (M2) | Greenhouse: plant, grow, harvest |
+| Radiation shielding | Dose counter only | Solar storm with shelter, sandbag shielding and real dose data |
+| Clear goals | One objective line | Daily mission checklist and an ending with stars |
+| Decisions with outcomes | Few cards, hard to read | Every action shows cost and benefit; the night report explains each change |
+| Kid-friendly UI | Many gauges, chips, Station View, Data Pad | Five resource bars, energy, sol counter, mission list |
+| Simple base entry | Separate airlock room with a lever and two hatches | Press E at the door; a two-second airlock animation |
+| NASA data in play | Mars Trek map only | Mars Trek site choice, RadLab doses, DONKI storm, BVAD crew needs |
+
+The onboarding landing (`TouchdownIntro` and `LandingScene`) is kept unchanged.
+
+## Game flow
+
+1. **Main menu**: New Game or Continue.
+2. **Choose your base site**: a Mars Trek map with three real sites. Each card shows
+   real data and what it means in the game: sunlight, ice and radiation.
+3. **Landing**: the existing Touchdown sequence.
+4. **7 sols at Life Line Station**. Each sol:
+   - Morning: PEBBLE gives the day's missions and any warning.
+   - Day: 3 energy points (2 on sol 1). Walk to a station and press E. Each action costs
+     energy and shows what it gives and what it takes.
+   - Night: sleep in the bunk or the storm shelter. The sleep panel lets you choose what
+     stays on overnight and previews the morning. The night report lists each change
+     and its cause.
+5. **Ending**: the supply ship arrives after sol 7. Up to three stars (Survived, Grew food,
+   Stayed safe), a list of your key decisions and the NASA data you used. Running out
+   of air, water or food, or going over the dose budget, ends the mission early. You can
+   retry from the morning of that sol.
+
+## Resources
+
+| Resource | Start | Uses | Makes |
+| --- | --- | --- | --- |
+| Power (battery kWh) | 70 / 100 | Life support, heaters, grow lights, oxygen maker, ice drill | Solar panels (site sunlight × dust × weather) |
+| Air (O₂ kg) | 4 kg | 0.84 kg per sol for you (BVAD) | Oxygen maker (water + power), growing plants |
+| Water (L) | 30 L | You, each crop, oxygen maker | Ice drill (amount depends on site) |
+| Food (days) | 5 days | 1 per sol | Harvest: lettuce +2 (2 sols), potatoes +5 (4 sols) |
+| Radiation (µGy) | 0 | Hours × RadLab rate × site × shielding | Shelter and sandbags lower it |
+
+Links that create trade-offs:
+
+- Grow lights and the oxygen maker drain the battery. During the dust storm the panels
+  make about a third of their normal power, so something must be switched off.
+- The oxygen maker splits water, so air costs water. More crops also cost water.
+- Dust builds up on the panels every sol. Clean them yourself (energy and dose), or send
+  PEBBLE (power, half as clean).
+- An empty battery causes a brownout: the oxygen maker and lights stop and the cold
+  harms the crops.
+- Sleeping in the shelter is safer but cramped, so you get 2 energy the next day.
+
+## Events (sol by sol)
+
+| Sol | Event | Player decision |
+| --- | --- | --- |
+| 1 | Arrival in the afternoon | Plant the first crop, switch on the oxygen maker |
+| 2 | Dust on the panels | Clean the panels or send PEBBLE; drill ice |
+| 3 | Dust storm forecast | Charge the battery, build shielding, harvest lettuce |
+| 4–5 | Dust storm (solar × 0.35) | Overnight power plan: lights, oxygen maker |
+| 5 | DONKI CME on the Sun (only seen if you check the comms dish) | Prepare the shelter, sleep there |
+| 6 | Solar particle storm (RadLab 20 May 2024 profile) | Hide in the shelter or keep working |
+| 7 | Clear sky, supply ship due | Final harvest, then the ending |
+
+## NASA data used
+
+All values are archived snapshots and are labelled as archived in the game.
+
+- **OSDR RadLab**: Curiosity RAD on the Mars surface (`MSL-RAD-Surface`) and ISS
+  `DosTel1`, May 2024. Quiet Mars ≈ 4.6 µGy/h; on 20 May 2024 the hourly mean rose to
+  276 µGy/h. The storm-day dose is the real hourly profile. Generated by
+  `scripts/fetch-radlab.mjs` into `src/sim/outpost/radlab-may2024.json`.
+- **NASA Mars Trek**: the Viking colour mosaic for the site map. Site latitude and MOLA
+  elevation drive sunlight and dose factors. Ice amounts come from published radar and
+  neutron findings. All factors are labelled as game estimates.
+- **NASA DONKI**: CME `2024-05-20T05:36:00-CME-001`, the fast halo far-side eruption that
+  caused the 20 May particle storm at Mars.
+- **NASA BVAD (NTRS 20210024855)**: crew oxygen use (0.84 kg per day) and water needs.
+
+The radiation dose budget (1,300 µGy for the mission; under 900 µGy earns the "Stayed safe" star) is a game rule so the storm matters
+in a short game. The ending says that real astronaut limits are much higher.
+
+## World layout
+
+The base stays at the origin, with the landing pad 50 m east. A paved avenue runs
+east–west in front of the hab door; each station faces it and has a floating label.
+Exact coordinates are in [world.md](../tech/world.md).
+
+- West of the door: storm shelter (sandbag walls), then the greenhouse dome with trays
+- East of the door: oxygen maker (Kiln model, green lamp when on)
+- South-east, across the avenue: ice drill (Kiln model) with ice mounds, rover, supply crates
+- North-east: comms dish and PEBBLE's charging dock by the hab, then the solar rows with
+  the battery at their west end (panels charge it, a buried power cable runs to the hab)
+- Water and oxygen run in buried trenches (drill to oxygen maker to hab)
+
+The far overhang and repair junction are removed from play.
+
+## Controls
+
+First person uses pointer lock like Minecraft: move the mouse to look, WASD to walk,
+Shift to run, and E or a left click at the centre dot to use a station. Esc releases the
+mouse and pauses. The mouse cursor is only free in Station View (isometric) and menus;
+menus also work with the keyboard.
+
+## Implementation map
+
+| Area | Files |
+| --- | --- |
+| Pure simulation | `src/sim/outpost/` (`data.ts`, `outpost.ts`, `radlab-may2024.json`) |
+| Store and save | `src/state/useOutpostStore.ts` (`marslifeline.outpost.v1`) |
+| World bridge | `src/game/OutpostBridge.tsx` writes the visual snapshot the world already reads |
+| Stations | `src/game/world/Stations.tsx`, `src/game/world/siteLayout.ts`, `src/game/world/Walkways.tsx` |
+| Station models | [phase-7 batch](../../assets/briefs/phase-7-batch.md): oxygen-maker, ice-drill, path-lamp |
+| Hab and door | `src/game/world/Hab.tsx` |
+| UI | `src/ui/OutpostHud.tsx` + `.css`, `src/ui/OutpostPanels.tsx`, `src/ui/SitePicker.tsx` + `.css` |
+| Tests | `tests/sim/outpost.test.mjs`, `tests/world/site.test.mjs` |
+
+## Status
+
+Implemented in this pass. See the changelog entry for verification.

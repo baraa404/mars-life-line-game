@@ -1,0 +1,39 @@
+function offsetPolygon(poly,d){
+  return poly.map((p,i)=>{
+    const a=poly[(i+poly.length-1)%poly.length],c=poly[(i+1)%poly.length];
+    const u=[p[0]-a[0],p[1]-a[1]],v=[c[0]-p[0],c[1]-p[1]];
+    const lu=Math.hypot(...u),lv=Math.hypot(...v);
+    const n=[-u[1]/lu,u[0]/lu],m=[-v[1]/lv,v[0]/lv];
+    const q=[p[0]+n[0]*d,p[1]+n[1]*d],r=[p[0]+m[0]*d,p[1]+m[1]*d];
+    const den=u[0]*v[1]-u[1]*v[0];
+    if(Math.abs(den)<1e-8)return q;
+    const t=((r[0]-q[0])*v[1]-(r[1]-q[1])*v[0])/den;
+    return [q[0]+u[0]*t,q[1]+u[1]*t];
+  });
+}
+function geometryBuilder(){
+  const pos=[];
+  const tri=(a,b,c)=>pos.push(...a,...b,...c);
+  const quad=(a,b,c,d)=>{tri(a,b,c);tri(a,c,d);};
+  const finish=()=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.computeVertexNormals();return g;};
+  return {tri,quad,finish};
+}
+function plate(poly,depth,bevel=0.004){
+  const b=Math.min(bevel,depth*0.32),small=offsetPolygon(poly,b),g=geometryBuilder();
+  const loops=[small,poly,poly,small].map((p,i)=>p.map(q=>[q[0],q[1],[-depth/2,-depth/2+b,depth/2-b,depth/2][i]]));
+  for(let k=0;k<3;k++)for(let i=0;i<poly.length;i++){const j=(i+1)%poly.length;g.quad(loops[k][i],loops[k][j],loops[k+1][j],loops[k+1][i]);}
+  const cap=THREE.ShapeUtils.triangulateShape(small.map(p=>new THREE.Vector2(...p)),[]);
+  for(const [a,b,c] of cap){g.tri(loops[0][c],loops[0][b],loops[0][a]);g.tri(loops[3][a],loops[3][b],loops[3][c]);}
+  return g.finish();
+}
+function frame(outer,inner,depth,b=0.008){
+  const g=geometryBuilder(),n=outer.length;
+  const os=offsetPolygon(outer,b),is=offsetPolygon(inner,-b);
+  const zs=[-depth/2,-depth/2+b,depth/2-b,depth/2];
+  const O=[os,outer,outer,os].map((p,k)=>p.map(q=>[...q,zs[k]]));
+  const I=[is,inner,inner,is].map((p,k)=>p.map(q=>[...q,zs[k]]));
+  for(let k=0;k<3;k++)for(let i=0;i<n;i++){const j=(i+1)%n;g.quad(O[k][i],O[k][j],O[k+1][j],O[k+1][i]);g.quad(I[k][j],I[k][i],I[k+1][i],I[k+1][j]);}
+  for(let i=0;i<n;i++){const j=(i+1)%n;g.quad(O[3][i],O[3][j],I[3][j],I[3][i]);g.quad(O[0][j],O[0][i],I[0][i],I[0][j]);}
+  return g.finish();
+}
+function oct(w,h,c=0.035){return [[-w/2+c,-h/2],[w/2-c,-h/2],[w/2,-h/2+c],[w/2,h/2-c],[w/2-c,h/2],[-w/2+c,h/2],[-w/2,h/2-c],[-w/2,-h/2+c]];}

@@ -1,0 +1,1281 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_01cc57c733784023bad2048610c93984",
+  "revisionId": "r_b1998f758f8c4d668fb46e9827dc9ce8",
+  "parentRevision": "r_7c7e47c9710a43039d7a22baa7cf0100",
+  "name": "mesa-cliff-overhang",
+  "tags": [],
+  "createdAt": "2026-11-12T19:27:23.641Z",
+  "description": "Naturalized compact shelter: irregular oval stone footprints replace rectangular block tiers. Approx11.3m width,5.47m height,5.40m depth. Required shelter_zone preserved.",
+  "brief": "Sole visual reference: phase-2/mesa-cliff-overhang.png. Compact eroded shelter, replacing rejected oversized grid cliff; irregular oval strata, chipped side buttresses, low accessible terrace, sample pedestal, shelter_zone. User requested smaller cave, overriding original catalog 30x15m scale.",
+  "attribution": {
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:af458ccea8e96022407123545a0c70dc3d32194df6e4d2d9394c7e2c1f26348f",
+      "bytes": 262100
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:d81668c528f8c82c57bef94bef63a485caf49b4a76ffc3f793187a687820f3c9",
+      "bytes": 14959
+    },
+    "preview.png": {
+      "sha256": "sha256:56b880838f505d86e6a74e60bfda24ed2e2387648244fd0d9bada8f0f3dccb71",
+      "bytes": 46893
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "af458ccea8e96022407123545a0c70dc3d32194df6e4d2d9394c7e2c1f26348f",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -2.5873352050781246,
+          0,
+          -5.598601937294006
+        ],
+        "max": [
+          2.814981603622436,
+          5.473001384735108,
+          5.720043659210205
+        ],
+        "size": [
+          5.402316808700561,
+          5.473001384735108,
+          11.318645596504211
+        ],
+        "center": [
+          0.11382319927215567,
+          2.736500692367554,
+          0.060720860958099365
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 0,
+        "offsetToGround": 0,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "mesa-cliff-overhang"
+      },
+      "renderMetrics": {
+        "triangles": 2146,
+        "drawCalls": 35,
+        "uniqueGeometries": 35,
+        "uniqueMaterials": 1,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 12000
+            },
+            "measured": {
+              "triangles": 2146
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 0\" occupy the same space: they share 0.00363 m³, which is 100.0% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 1,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 10\" occupy the same space: they share 0.0226 m³, which is 100.0% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 1,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 5\" occupy the same space: they share 0.0325 m³, which is 98.9% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.988703334,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 2\" occupy the same space: they share 0.0424 m³, which is 93.1% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.930580467,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 13\" occupy the same space: they share 0.0127 m³, which is 66.2% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.661812895,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 7\" occupy the same space: they share 0.0182 m³, which is 60.7% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.607296974,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left lower outer buttress\" and \"Scattered apron fragment 13\" occupy the same space: they share 0.0111 m³, which is 57.7% of the smaller part.",
+              "affected": {
+                "node": "Left lower outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.577276417,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Scattered apron fragment 1\" and \"Scattered apron fragment 11\" occupy the same space: they share 0.00953 m³, which is 53.0% of the smaller part.",
+              "affected": {
+                "node": "Scattered apron fragment 1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.530236686,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner arch shoulder\" and \"Left high outer buttress\" occupy the same space: they share 1.55 m³, which is 51.2% of the smaller part.",
+              "affected": {
+                "node": "Left inner arch shoulder"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.512137019,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner arch shoulder\" and \"Right high outer buttress\" occupy the same space: they share 1.49 m³, which is 48.8% of the smaller part.",
+              "affected": {
+                "node": "Right inner arch shoulder"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.488138116,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 11\" occupy the same space: they share 0.0241 m³, which is 43.8% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.437678504,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner middle slab\" and \"Right middle outer buttress\" occupy the same space: they share 1.33 m³, which is 34.9% of the smaller part.",
+              "affected": {
+                "node": "Right inner middle slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.348608414,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner middle slab\" and \"Left middle outer buttress\" occupy the same space: they share 1.28 m³, which is 34.3% of the smaller part.",
+              "affected": {
+                "node": "Left inner middle slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.343292088,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Overhanging broad lintel\" occupy the same space: they share 4.85 m³, which is 30.4% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.303881921,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner basal slab\" and \"Right lower outer buttress\" occupy the same space: they share 1.21 m³, which is 28.0% of the smaller part.",
+              "affected": {
+                "node": "Right inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.280257397,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner basal slab\" and \"Left lower outer buttress\" occupy the same space: they share 1.16 m³, which is 26.8% of the smaller part.",
+              "affected": {
+                "node": "Left inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.26777556,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Shelter floor\" occupy the same space: they share 0.0937 m³, which is 19.5% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.195223664,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Left lower outer buttress\" occupy the same space: they share 0.898 m³, which is 17.3% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.173263115,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner middle slab\" and \"Right high outer buttress\" occupy the same space: they share 0.494 m³, which is 16.2% of the smaller part.",
+              "affected": {
+                "node": "Right inner middle slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.161592639,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner middle slab\" and \"Left high outer buttress\" occupy the same space: they share 0.485 m³, which is 16.1% of the smaller part.",
+              "affected": {
+                "node": "Left inner middle slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.160666578,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Right lower outer buttress\" occupy the same space: they share 0.794 m³, which is 15.6% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.156382925,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner basal slab\" and \"Right middle outer buttress\" occupy the same space: they share 0.513 m³, which is 13.4% of the smaller part.",
+              "affected": {
+                "node": "Right inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.134234701,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner basal slab\" and \"Left middle outer buttress\" occupy the same space: they share 0.483 m³, which is 12.9% of the smaller part.",
+              "affected": {
+                "node": "Left inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.128785921,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Upper stepped shelf\" occupy the same space: they share 1.55 m³, which is 11.3% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.113319029,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right lower outer buttress\" and \"Scattered apron fragment 2\" occupy the same space: they share 0.00497 m³, which is 10.9% of the smaller part.",
+              "affected": {
+                "node": "Right lower outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.109016299,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner arch shoulder\" and \"Overhanging broad lintel\" occupy the same space: they share 0.392 m³, which is 9.3% of the smaller part.",
+              "affected": {
+                "node": "Left inner arch shoulder"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.093246408,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Overhanging broad lintel\" and \"Upper stepped shelf\" occupy the same space: they share 1.20 m³, which is 8.7% of the smaller part.",
+              "affected": {
+                "node": "Overhanging broad lintel"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.087292777,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner arch shoulder\" and \"Overhanging broad lintel\" occupy the same space: they share 0.362 m³, which is 8.7% of the smaller part.",
+              "affected": {
+                "node": "Right inner arch shoulder"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.0869313,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Shelter floor\" occupy the same space: they share 0.0363 m³, which is 7.6% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.075590635,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Upper stepped shelf\" and \"Flat chipped crown\" occupy the same space: they share 0.574 m³, which is 7.2% of the smaller part.",
+              "affected": {
+                "node": "Upper stepped shelf"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.071872787,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right middle outer buttress\" and \"Right high outer buttress\" occupy the same space: they share 0.204 m³, which is 6.7% of the smaller part.",
+              "affected": {
+                "node": "Right middle outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.066634764,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Recessed fractured back wall\" occupy the same space: they share 0.769 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.065140609,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left middle outer buttress\" and \"Left high outer buttress\" occupy the same space: they share 0.196 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Left middle outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.064791465,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left high outer buttress\" occupy the same space: they share 0.194 m³, which is 6.4% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.064111142,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left lower outer buttress\" and \"Left middle outer buttress\" occupy the same space: they share 0.227 m³, which is 6.0% of the smaller part.",
+              "affected": {
+                "node": "Left lower outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.060407137,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right lower outer buttress\" and \"Right middle outer buttress\" occupy the same space: they share 0.226 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "Right lower outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059181956,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Right high outer buttress\" occupy the same space: they share 0.181 m³, which is 5.9% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.059071352,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right inner basal slab\" and \"Right inner middle slab\" occupy the same space: they share 0.207 m³, which is 5.4% of the smaller part.",
+              "affected": {
+                "node": "Right inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.054204682,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner basal slab\" and \"Left inner middle slab\" occupy the same space: they share 0.202 m³, which is 5.4% of the smaller part.",
+              "affected": {
+                "node": "Left inner basal slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.054076692,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left inner arch shoulder\" occupy the same space: they share 0.225 m³, which is 5.4% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.053603167,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Left inner middle slab\" and \"Left inner arch shoulder\" occupy the same space: they share 0.184 m³, which is 4.9% of the smaller part.",
+              "affected": {
+                "node": "Left inner middle slab"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.049212924,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Right inner arch shoulder\" occupy the same space: they share 0.189 m³, which is 4.5% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.045428574,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left middle outer buttress\" occupy the same space: they share 0.108 m³, which is 2.9% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.028852168,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left inner basal slab\" occupy the same space: they share 0.110 m³, which is 2.5% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.025483702,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Right inner middle slab\" occupy the same space: they share 0.0891 m³, which is 2.3% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.023329421,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Right lower outer buttress\" and \"Scattered apron fragment 8\" occupy the same space: they share 0.000357 m³, which is 1.9% of the smaller part.",
+              "affected": {
+                "node": "Right lower outer buttress"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.018678093,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left inner middle slab\" occupy the same space: they share 0.0678 m³, which is 1.8% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.01817657,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Right inner basal slab\" occupy the same space: they share 0.0661 m³, which is 1.5% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.015264538,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Right middle outer buttress\" occupy the same space: they share 0.0534 m³, which is 1.4% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.013963328,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Scattered apron fragment 0\" and \"Scattered apron fragment 10\" occupy the same space: they share 0.0000415 m³, which is 1.1% of the smaller part.",
+              "affected": {
+                "node": "Scattered apron fragment 0"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.011442309,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Recessed fractured back wall\" and \"Left lower outer buttress\" occupy the same space: they share 0.0374 m³, which is 0.7% of the smaller part.",
+              "affected": {
+                "node": "Recessed fractured back wall"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.007214671,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Scattered apron fragment 7\" and \"Scattered apron fragment 11\" occupy the same space: they share 0.0000866 m³, which is 0.3% of the smaller part.",
+              "affected": {
+                "node": "Scattered apron fragment 7"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.002885633,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Sample pedestal foot\" and \"Sample outcrop slab\" occupy the same space: they share 0.000419 m³, which is 0.2% of the smaller part.",
+              "affected": {
+                "node": "Sample pedestal foot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.001862318,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Broad shelter terrace\" and \"Scattered apron fragment 1\" occupy the same space: they share 0.0000270 m³, which is 0.2% of the smaller part.",
+              "affected": {
+                "node": "Broad shelter terrace"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.001502311,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_TRUNCATED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Tested 64 of 89 overlapping part pairs: 0 involve parts that could not be measured, 25 were beyond the analysis budget (64 booleans, 128 solids). Unreached pairs were not examined; the most overlapping bounding boxes were tested first.",
+              "measurement": {
+                "name": "overlappingPartPairsTested",
+                "actual": 64,
+                "expected": 89,
+                "breakdown": {
+                  "pairsUnmeasurable": 0,
+                  "pairsNotReached": 25
+                }
+              }
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 35,
+            "partVolumeCandidatePairs": 89,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 64,
+            "partVolumeUnmeasurablePairs": 0,
+            "partVolumePairsNotReached": 25,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 0,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 0,
+            "openSurfaceClosedParts": 35,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "A",
+            "instanceabilitySummary": "A (informational, not a QA verdict), set by 1 distinct material (A at 0-1). Also: 35 geometries; 35 draw calls.",
+            "uniqueGeometries": 35,
+            "uniqueMaterials": 1,
+            "meshNodes": 35,
+            "meshInstances": 35,
+            "drawCalls": 35,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 2146,
+            "materialCount": 1,
+            "opaqueMaterials": 1,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 1,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "geometry-flat",
+      "materialFaithful": false,
+      "exactArtifact": true,
+      "rendererId": "cpu-raster:1.7.0",
+      "inputGlbSha256": "sha256:af458ccea8e96022407123545a0c70dc3d32194df6e4d2d9394c7e2c1f26348f",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

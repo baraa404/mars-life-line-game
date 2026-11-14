@@ -1,0 +1,1727 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_55d0db4c8f1d4c83b0f0b92b1768439c",
+  "revisionId": "r_53e22bce317d430dab423745b084e8a9",
+  "name": "pebble",
+  "tags": [],
+  "createdAt": "2026-11-12T22:39:42.041Z",
+  "description": "Reference-matched Phase 3 model and native clips; brief assets/briefs/pebble.md",
+  "attribution": {
+    "model": "GPT-6",
+    "harness": "Codex"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:7fef58a48c9ac178e957e28869c016ddb3b4ea3c61663c92c596c3313617672a",
+      "bytes": 171968
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:760848a5bbaca444c0296442b05101dca5b90bdf273fd98195398bcd85851af1",
+      "bytes": 17897
+    },
+    "preview.png": {
+      "sha256": "sha256:18df881e5dcac6e02f255411161a988f67525ecdf70a111989118581f9c04581",
+      "bytes": 71494
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000002_e044c9bcf9e37b8e662ed6f5eed1af81b4cefb2a28f22352a727e390531bb769",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "7fef58a48c9ac178e957e28869c016ddb3b4ea3c61663c92c596c3313617672a",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -0.2563956283474392,
+          -0.0051523350227900035,
+          -0.3000000001490116
+        ],
+        "max": [
+          0.263000000372529,
+          0.7255000003501773,
+          0.3000000001490116
+        ],
+        "size": [
+          0.5193956287199681,
+          0.7306523353729673,
+          0.6000000002980233
+        ],
+        "center": [
+          0.003302186012544922,
+          0.3601738326636936,
+          0
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": -0.0051523350227900035,
+        "offsetToGround": 0.0051523350227900035,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "pebble"
+      },
+      "renderMetrics": {
+        "triangles": 4410,
+        "drawCalls": 66,
+        "uniqueGeometries": 25,
+        "uniqueMaterials": 6,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 8000
+            },
+            "measured": {
+              "triangles": 4410
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "warn",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "warn",
+          "findings": [
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Continuous charcoal tread belt\".",
+              "affected": {
+                "node": "Continuous charcoal tread belt",
+                "nodePath": "pebble/track_l/Continuous charcoal tread belt | pebble/track_r/Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 0\".",
+              "affected": {
+                "node": "Tread pad 0",
+                "nodePath": "pebble/track_l/lug_l_0/Tread pad 0 | pebble/track_r/lug_r_0/Tread pad 0"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 1\".",
+              "affected": {
+                "node": "Tread pad 1",
+                "nodePath": "pebble/track_l/lug_l_1/Tread pad 1 | pebble/track_r/lug_r_1/Tread pad 1"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 2\".",
+              "affected": {
+                "node": "Tread pad 2",
+                "nodePath": "pebble/track_l/lug_l_2/Tread pad 2 | pebble/track_r/lug_r_2/Tread pad 2"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 3\".",
+              "affected": {
+                "node": "Tread pad 3",
+                "nodePath": "pebble/track_l/lug_l_3/Tread pad 3 | pebble/track_r/lug_r_3/Tread pad 3"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 4\".",
+              "affected": {
+                "node": "Tread pad 4",
+                "nodePath": "pebble/track_l/lug_l_4/Tread pad 4 | pebble/track_r/lug_r_4/Tread pad 4"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 5\".",
+              "affected": {
+                "node": "Tread pad 5",
+                "nodePath": "pebble/track_l/lug_l_5/Tread pad 5 | pebble/track_r/lug_r_5/Tread pad 5"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 6\".",
+              "affected": {
+                "node": "Tread pad 6",
+                "nodePath": "pebble/track_l/lug_l_6/Tread pad 6 | pebble/track_r/lug_r_6/Tread pad 6"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 7\".",
+              "affected": {
+                "node": "Tread pad 7",
+                "nodePath": "pebble/track_l/lug_l_7/Tread pad 7 | pebble/track_r/lug_r_7/Tread pad 7"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 8\".",
+              "affected": {
+                "node": "Tread pad 8",
+                "nodePath": "pebble/track_l/lug_l_8/Tread pad 8 | pebble/track_r/lug_r_8/Tread pad 8"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 9\".",
+              "affected": {
+                "node": "Tread pad 9",
+                "nodePath": "pebble/track_l/lug_l_9/Tread pad 9 | pebble/track_r/lug_r_9/Tread pad 9"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 10\".",
+              "affected": {
+                "node": "Tread pad 10",
+                "nodePath": "pebble/track_l/lug_l_10/Tread pad 10 | pebble/track_r/lug_r_10/Tread pad 10"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 11\".",
+              "affected": {
+                "node": "Tread pad 11",
+                "nodePath": "pebble/track_l/lug_l_11/Tread pad 11 | pebble/track_r/lug_r_11/Tread pad 11"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 12\".",
+              "affected": {
+                "node": "Tread pad 12",
+                "nodePath": "pebble/track_l/lug_l_12/Tread pad 12 | pebble/track_r/lug_r_12/Tread pad 12"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 13\".",
+              "affected": {
+                "node": "Tread pad 13",
+                "nodePath": "pebble/track_l/lug_l_13/Tread pad 13 | pebble/track_r/lug_r_13/Tread pad 13"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 14\".",
+              "affected": {
+                "node": "Tread pad 14",
+                "nodePath": "pebble/track_l/lug_l_14/Tread pad 14 | pebble/track_r/lug_r_14/Tread pad 14"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Tread pad 15\".",
+              "affected": {
+                "node": "Tread pad 15",
+                "nodePath": "pebble/track_l/lug_l_15/Tread pad 15 | pebble/track_r/lug_r_15/Tread pad 15"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Shoulder socket\".",
+              "affected": {
+                "node": "Shoulder socket",
+                "nodePath": "pebble/body/arm_l/Shoulder socket | pebble/body/arm_r/Shoulder socket"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Ivory upper link\".",
+              "affected": {
+                "node": "Ivory upper link",
+                "nodePath": "pebble/body/arm_l/Ivory upper link | pebble/body/arm_r/Ivory upper link"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Elbow pivot\".",
+              "affected": {
+                "node": "Elbow pivot",
+                "nodePath": "pebble/body/arm_l/elbow_l/Elbow pivot | pebble/body/arm_r/elbow_r/Elbow pivot"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Ivory forearm\".",
+              "affected": {
+                "node": "Ivory forearm",
+                "nodePath": "pebble/body/arm_l/elbow_l/Ivory forearm | pebble/body/arm_r/elbow_r/Ivory forearm"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "2 scene nodes share the name \"Gripper palm\".",
+              "affected": {
+                "node": "Gripper palm",
+                "nodePath": "pebble/body/arm_l/elbow_l/grip_l/Gripper palm | pebble/body/arm_r/elbow_r/grip_r/Gripper palm"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 2,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            },
+            {
+              "code": "UNIVERSAL_DUPLICATE_NODE_NAME",
+              "disposition": "warn",
+              "dimension": "requirementReadiness",
+              "profile": "universal",
+              "message": "4 scene nodes share the name \"Two finger jaw\".",
+              "affected": {
+                "node": "Two finger jaw",
+                "nodePath": "pebble/body/arm_l/elbow_l/grip_l/finger_l_a/Two finger jaw | pebble/body/arm_l/elbow_l/grip_l/finger_l_b/Two finger jaw | pebble/body/arm_r/elbow_r/grip_r/finger_r_a/Two finger jaw | pebble/body/arm_r/elbow_r/grip_r/finger_r_b/Two finger jaw"
+              },
+              "measurement": {
+                "name": "duplicateCount",
+                "actual": 4,
+                "expected": 1
+              },
+              "repairText": "Use unique names when nodes must be addressed independently."
+            }
+          ]
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"track_l_accent-paint\" and \"track_l_smooth-structure_structure-gray\" occupy the same space: they share 0.00206 m³, which is 95.2% of the smaller part.",
+              "affected": {
+                "node": "track_l_accent-paint"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.951612943,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"track_r_accent-paint\" and \"track_r_smooth-structure_structure-gray\" occupy the same space: they share 0.00206 m³, which is 95.2% of the smaller part.",
+              "affected": {
+                "node": "track_r_accent-paint"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.951612943,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory rounded cube shell\" and \"body_smooth-structure_structure-gray\" occupy the same space: they share 0.000868 m³, which is 53.9% of the smaller part.",
+              "affected": {
+                "node": "Ivory rounded cube shell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.53881494,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory rounded cube shell\" and \"body_accent-paint\" occupy the same space: they share 0.00116 m³, which is 49.7% of the smaller part.",
+              "affected": {
+                "node": "Ivory rounded cube shell"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.49658286,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Short neck pedestal\" and \"Ivory rounded head\" occupy the same space: they share 0.0000801 m³, which is 33.3% of the smaller part.",
+              "affected": {
+                "node": "Short neck pedestal"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.333372664,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 14\" occupy the same space: they share 0.0000403 m³, which is 31.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.311150003,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 14\" occupy the same space: they share 0.0000403 m³, which is 31.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.311150003,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 6\" occupy the same space: they share 0.0000403 m³, which is 31.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.311150003,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 6\" occupy the same space: they share 0.0000403 m³, which is 31.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.311150003,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory rounded head\" and \"Dark face rim\" occupy the same space: they share 0.000157 m³, which is 28.4% of the smaller part.",
+              "affected": {
+                "node": "Ivory rounded head"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.284386303,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Shoulder socket\" and \"body_accent-paint\" occupy the same space: they share 0.0000390 m³, which is 27.1% of the smaller part.",
+              "affected": {
+                "node": "Shoulder socket"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.271427908,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Shoulder socket\" and \"body_accent-paint\" occupy the same space: they share 0.0000390 m³, which is 27.1% of the smaller part.",
+              "affected": {
+                "node": "Shoulder socket"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.271427908,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 13\" occupy the same space: they share 0.0000340 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.262511842,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 13\" occupy the same space: they share 0.0000340 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.262511842,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 5\" occupy the same space: they share 0.0000340 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.262511842,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 5\" occupy the same space: they share 0.0000340 m³, which is 26.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.262511842,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 11\" occupy the same space: they share 0.0000311 m³, which is 24.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.240539984,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 11\" occupy the same space: they share 0.0000311 m³, which is 24.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.240539984,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 3\" occupy the same space: they share 0.0000311 m³, which is 24.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.240539984,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 3\" occupy the same space: they share 0.0000311 m³, which is 24.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.240539984,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 15\" occupy the same space: they share 0.0000301 m³, which is 23.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.233001022,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 15\" occupy the same space: they share 0.0000301 m³, which is 23.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.233001022,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 7\" occupy the same space: they share 0.0000301 m³, which is 23.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.233001022,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 7\" occupy the same space: they share 0.0000301 m³, which is 23.3% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.233001022,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Elbow pivot\" and \"Ivory forearm\" occupy the same space: they share 0.0000324 m³, which is 20.9% of the smaller part.",
+              "affected": {
+                "node": "Elbow pivot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.209192649,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Elbow pivot\" and \"Ivory forearm\" occupy the same space: they share 0.0000324 m³, which is 20.9% of the smaller part.",
+              "affected": {
+                "node": "Elbow pivot"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.209192649,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory rounded head\" and \"head_accent-paint\" occupy the same space: they share 0.0000663 m³, which is 19.2% of the smaller part.",
+              "affected": {
+                "node": "Ivory rounded head"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.192307447,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 12\" occupy the same space: they share 0.0000236 m³, which is 18.2% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.182269899,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 12\" occupy the same space: they share 0.0000236 m³, which is 18.2% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.182269899,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 4\" occupy the same space: they share 0.0000236 m³, which is 18.2% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.182269899,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 4\" occupy the same space: they share 0.0000236 m³, which is 18.2% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.182269899,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 10\" occupy the same space: they share 0.0000233 m³, which is 18.0% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.180181901,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 10\" occupy the same space: they share 0.0000233 m³, which is 18.0% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.180181901,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 2\" occupy the same space: they share 0.0000233 m³, which is 18.0% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.180181901,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 2\" occupy the same space: they share 0.0000233 m³, which is 18.0% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.180181901,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Charcoal undercarriage\" and \"track_l_smooth-structure_structure-gray\" occupy the same space: they share 0.000359 m³, which is 16.6% of the smaller part.",
+              "affected": {
+                "node": "Charcoal undercarriage"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.16563779,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Charcoal undercarriage\" and \"track_r_smooth-structure_structure-gray\" occupy the same space: they share 0.000359 m³, which is 16.6% of the smaller part.",
+              "affected": {
+                "node": "Charcoal undercarriage"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.16563779,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"track_l_accent-paint\" occupy the same space: they share 0.000620 m³, which is 15.9% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.158754051,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"track_r_accent-paint\" occupy the same space: they share 0.000620 m³, which is 15.9% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.158754051,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Gripper palm\" and \"Two finger jaw\" occupy the same space: they share 0.00000271 m³, which is 12.5% of the smaller part.",
+              "affected": {
+                "node": "Gripper palm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.125175005,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 1\" occupy the same space: they share 0.0000157 m³, which is 12.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.121400314,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 1\" occupy the same space: they share 0.0000157 m³, which is 12.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.121400314,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 9\" occupy the same space: they share 0.0000157 m³, which is 12.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.121400314,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 9\" occupy the same space: they share 0.0000157 m³, which is 12.1% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.121400314,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Ivory forearm\" and \"Wrist air nozzle\" occupy the same space: they share 0.00000202 m³, which is 10.4% of the smaller part.",
+              "affected": {
+                "node": "Ivory forearm"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.103682098,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 0\" occupy the same space: they share 0.00000846 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.065375284,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 0\" occupy the same space: they share 0.00000846 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.065375284,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 8\" occupy the same space: they share 0.00000846 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.065375284,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Continuous charcoal tread belt\" and \"Tread pad 8\" occupy the same space: they share 0.00000846 m³, which is 6.5% of the smaller part.",
+              "affected": {
+                "node": "Continuous charcoal tread belt"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.065375284,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 1\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000260 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.020128946,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 1\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000260 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 1"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.020128946,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 2\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000260 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 2"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.020128946,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 2\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000260 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 2"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.020128946,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 3\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000257 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 3"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.01985289,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 3\" and \"Ivory rounded cube shell\" occupy the same space: they share 0.00000257 m³, which is 2.0% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 3"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.01985289,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 0\" and \"Ivory rounded cube shell\" occupy the same space: they share 2.95e-7 m³, which is 0.2% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 0"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.002281641,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Tread pad 0\" and \"Ivory rounded cube shell\" occupy the same space: they share 2.95e-7 m³, which is 0.2% of the smaller part.",
+              "affected": {
+                "node": "Tread pad 0"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.002281641,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_TRUNCATED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Tested 64 of 111 overlapping part pairs: 1 involve parts that could not be measured, 46 were beyond the analysis budget (64 booleans, 128 solids). Unreached pairs were not examined; the most overlapping bounding boxes were tested first.",
+              "measurement": {
+                "name": "overlappingPartPairsTested",
+                "actual": 64,
+                "expected": 111,
+                "breakdown": {
+                  "pairsUnmeasurable": 1,
+                  "pairsNotReached": 46
+                }
+              }
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_UNMEASURED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "1 part-volume measurement was unavailable. 1 because a valid closed solid could not be measured (Not manifold): \"screen_face\". 1 overlapping part pair includes this part and was not measured. This part is not certified clear."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 66,
+            "partVolumeCandidatePairs": 111,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 64,
+            "partVolumeUnmeasurablePairs": 1,
+            "partVolumePairsNotReached": 46,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 1,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 2,
+            "openSurfaceClosedParts": 64,
+            "openSurfaceCandidatePairs": 0,
+            "openSurfacePairsSampled": 0,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 6 distinct materials (C at 4-6). Also: 25 geometries; 66 draw calls. Optional advice, not a requirement: merging smooth-structure:structure-gray + dark-trim + accent-paint + smooth-structure and 1 more (differ in baseColorFactor, metallicFactor, roughnessFactor) would leave 2 materials (B at 2-3).",
+            "uniqueGeometries": 25,
+            "uniqueMaterials": 6,
+            "meshNodes": 66,
+            "meshInstances": 66,
+            "drawCalls": 66,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 4410,
+            "materialCount": 6,
+            "opaqueMaterials": 6,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 6,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 1,
+            "materialExtensionsUsed": "KHR_materials_emissive_strength",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:7fef58a48c9ac178e957e28869c016ddb3b4ea3c61663c92c596c3313617672a",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

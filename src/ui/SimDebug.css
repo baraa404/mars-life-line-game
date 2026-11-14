@@ -1,0 +1,20 @@
+.sim-debug {
+  position: fixed; top: 70px; right: 20px; width: min(420px, calc(100vw - 40px));
+  max-height: calc(100vh - 180px); overflow: auto; pointer-events: auto;
+  padding: 16px; box-sizing: border-box; border-radius: 12px;
+  background: color-mix(in srgb, var(--space-deep) 96%, transparent);
+  color: var(--structure-white); border: 1px solid var(--regolith-light); font-size: 14px;
+}
+.sim-debug h2 { margin: 0; font-size: 18px; }
+.sim-debug h3 { font-size: 16px; }
+.sim-debug dl { display: grid; grid-template-columns: 90px 1fr; gap: 6px; }
+.sim-debug dd { margin: 0; }
+.sim-debug dt { color: var(--regolith-light); }
+.sim-debug button { font: inherit; color: var(--space-deep); background: var(--structure-white); border: 0; border-radius: 5px; padding: 6px 10px; margin: 3px; cursor: pointer; }
+.sim-debug button:disabled { opacity: .5; cursor: default; }
+.sim-debug button:focus-visible { outline: 3px solid var(--accent-cyan); }
+.sim-debug .sim-actions { display: flex; flex-wrap: wrap; }
+.sim-debug details { margin-top: 12px; }
+.sim-debug label { display: block; margin: 5px 0; }
+.sim-debug summary { cursor: pointer; }
+.sim-debug ul { padding-left: 20px; }

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "icons": [
+    {
+      "id": "power",
+      "file": "/ui/icons/power.svg"
+    },
+    {
+      "id": "air",
+      "file": "/ui/icons/air.svg"
+    },
+    {
+      "id": "water",
+      "file": "/ui/icons/water.svg"
+    },
+    {
+      "id": "food",
+      "file": "/ui/icons/food.svg"
+    },
+    {
+      "id": "radiation",
+      "file": "/ui/icons/radiation.svg"
+    },
+    {
+      "id": "earth-link",
+      "file": "/ui/icons/earth-link.svg"
+    },
+    {
+      "id": "you",
+      "file": "/ui/icons/you.svg"
+    },
+    {
+      "id": "pebble",
+      "file": "/ui/icons/pebble.svg"
+    },
+    {
+      "id": "science",
+      "file": "/ui/icons/science.svg"
+    },
+    {
+      "id": "sleep",
+      "file": "/ui/icons/sleep.svg"
+    },
+    {
+      "id": "pause",
+      "file": "/ui/icons/pause.svg"
+    },
+    {
+      "id": "status-ok",
+      "file": "/ui/icons/status-ok.svg"
+    },
+    {
+      "id": "status-watch",
+      "file": "/ui/icons/status-watch.svg"
+    },
+    {
+      "id": "status-act",
+      "file": "/ui/icons/status-act.svg"
+    },
+    {
+      "id": "source-nasa-fact",
+      "file": "/ui/icons/source-nasa-fact.svg"
+    },
+    {
+      "id": "source-calculated",
+      "file": "/ui/icons/source-calculated.svg"
+    },
+    {
+      "id": "source-game-value",
+      "file": "/ui/icons/source-game-value.svg"
+    },
+    {
+      "id": "source-story",
+      "file": "/ui/icons/source-story.svg"
+    },
+    {
+      "id": "tag-archived",
+      "file": "/ui/icons/tag-archived.svg"
+    },
+    {
+      "id": "tag-live",
+      "file": "/ui/icons/tag-live.svg"
+    }
+  ],
+  "statusRule": "Always pair status shape with a text label; colour alone is insufficient."
+}

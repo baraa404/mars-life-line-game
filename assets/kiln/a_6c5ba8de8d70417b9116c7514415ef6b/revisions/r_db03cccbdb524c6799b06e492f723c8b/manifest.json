@@ -1,0 +1,630 @@
+{
+  "version": "kiln.asset.v1",
+  "assetId": "a_6c5ba8de8d70417b9116c7514415ef6b",
+  "revisionId": "r_db03cccbdb524c6799b06e492f723c8b",
+  "name": "oxygen-maker",
+  "tags": [],
+  "createdAt": "2026-11-13T18:52:14.659Z",
+  "description": "MOXIE-style oxygen maker: electrolyser cabinet with front intake grille, top fan, water inlet and two oxygen tanks",
+  "attribution": {
+    "model": "claude-opus",
+    "harness": "cursor"
+  },
+  "editable": true,
+  "files": {
+    "asset.glb": {
+      "sha256": "sha256:39d74d2979a9bd3c10f97bb35db41a8a147bbf2488efcbd34b06d42b0eb3cf68",
+      "bytes": 111116
+    },
+    "source.kiln.js": {
+      "sha256": "sha256:1c117eff5eef7c83d85fbf158d38fbd000eef2a9eb9def505c7abaf513fa2924",
+      "bytes": 12785
+    },
+    "preview.png": {
+      "sha256": "sha256:4de8f8be20ad140b83be407b6c7ac61e821245b877e8ef3014e6dded276a6e0c",
+      "bytes": 83623
+    }
+  },
+  "build": {
+    "engine": "sha256:f2e76431f57492e105ee6cc3573cfbedd5f8d89c4b4ca140f776446304cebfa4",
+    "options": {
+      "gltfExporter": "legacy",
+      "optimize": "off",
+      "instance": "auto",
+      "geometryPolicy": "warn",
+      "indexPolicy": "indexed",
+      "qaMode": "enforce",
+      "evaluatorMode": "subprocess",
+      "projectId": "mars-life-line",
+      "projectRevision": "r_0000000004_bafd5341dc61dfad6c32e794ee72fb5e728ecafded2f969b77d84203b077cca0",
+      "requirements": {
+        "kind": "kiln.requirements-context.v1",
+        "requirements": {
+          "kind": "kiln.asset-requirements",
+          "schemaVersion": 1,
+          "labels": [],
+          "frame": {
+            "units": "m",
+            "forward": "+X",
+            "up": "+Y",
+            "right": "+Z",
+            "groundY": 0
+          },
+          "requirements": {}
+        },
+        "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+        "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268"
+      }
+    },
+    "warnings": [],
+    "integration": {
+      "schemaVersion": "kiln.integration-manifest.v1",
+      "analyzerVersion": 1,
+      "artifactSha256": "39d74d2979a9bd3c10f97bb35db41a8a147bbf2488efcbd34b06d42b0eb3cf68",
+      "units": "m",
+      "axes": {
+        "forward": "+X",
+        "up": "+Y",
+        "right": "+Z"
+      },
+      "bounds": {
+        "min": [
+          -0.8100000023841858,
+          8.940696516468449e-10,
+          -1.490000000372529
+        ],
+        "max": [
+          0.8100000023841858,
+          1.7000000476837158,
+          1.2999999523162842
+        ],
+        "size": [
+          1.6200000047683716,
+          1.7000000467896461,
+          2.789999952688813
+        ],
+        "center": [
+          0,
+          0.8500000242888928,
+          -0.09500002402812247
+        ]
+      },
+      "pivot": {
+        "convention": "author-origin",
+        "position": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ground": {
+        "groundY": 0,
+        "contactTolerance": 0.02,
+        "minY": 8.940696516468449e-10,
+        "offsetToGround": -8.940696516468449e-10,
+        "grounded": true
+      },
+      "defaultScene": {
+        "index": 0,
+        "name": "oxygen-maker"
+      },
+      "renderMetrics": {
+        "triangles": 2484,
+        "drawCalls": 15,
+        "uniqueGeometries": 12,
+        "uniqueMaterials": 4,
+        "textureCount": 0,
+        "transparentMaterials": 0,
+        "skinned": false
+      },
+      "budget": {
+        "status": "pass",
+        "tiers": [
+          {
+            "tier": "LOD0",
+            "declared": {
+              "triangles": 6000
+            },
+            "measured": {
+              "triangles": 2484
+            },
+            "status": "pass"
+          }
+        ]
+      },
+      "structuralQa": {
+        "hasDefaultScene": true,
+        "finiteBounds": true,
+        "validatorErrors": 0,
+        "validatorWarnings": 0
+      },
+      "visualQa": "not_assessed"
+    },
+    "qa": {
+      "kind": "kiln.asset-qa-report",
+      "schemaVersion": 2,
+      "qaProfile": "asset.requirements.v1",
+      "policyHash": "sha256:9efcec929bf8a510c7dd0e18b687381e3824ff3d26cc20307f601d17535e5f34",
+      "adviceHash": "sha256:ca1f59b45e82e712e06149909000e2bc37b8cf159af70e32847088cecf153268",
+      "acceptance": "accepted",
+      "disposition": "pass",
+      "dimensions": {
+        "exportIntegrity": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "gltfErrors": 0,
+            "gltfWarnings": 0
+          }
+        },
+        "requirementReadiness": {
+          "status": "pass",
+          "findings": []
+        },
+        "promptAlignment": {
+          "status": "notEvaluated",
+          "findings": []
+        },
+        "visualQuality": {
+          "status": "notEvaluated",
+          "findings": [
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Oxygen tank 0_smooth-structure\" and \"Oxygen tank 0_accent-paint\" occupy the same space: they share 0.0192 m³, which is 85.7% of the smaller part.",
+              "affected": {
+                "node": "Oxygen tank 0_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.857338831,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Oxygen tank 1_smooth-structure\" and \"Oxygen tank 1_accent-paint\" occupy the same space: they share 0.0192 m³, which is 85.7% of the smaller part.",
+              "affected": {
+                "node": "Oxygen tank 1_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.857338831,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure\" and \"cabinet_smooth-structure_structure-gray\" occupy the same space: they share 0.397 m³, which is 63.1% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.631238266,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure\" and \"cabinet_dark-trim\" occupy the same space: they share 0.00740 m³, which is 38.9% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.389148814,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure_structure-gray\" and \"cabinet_dark-trim\" occupy the same space: they share 0.00439 m³, which is 23.1% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.23081787,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure\" and \"cabinet_accent-paint\" occupy the same space: they share 0.00416 m³, which is 21.2% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.21208678,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure\" and \"Water inlet pipe\" occupy the same space: they share 0.000576 m³, which is 12.5% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.124999986,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"Water inlet pipe\" and \"Water inlet flange\" occupy the same space: they share 0.000216 m³, which is 10.2% of the smaller part.",
+              "affected": {
+                "node": "Water inlet pipe"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.102083309,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_dark-trim\" and \"cabinet_accent-paint\" occupy the same space: they share 0.000255 m³, which is 1.3% of the smaller part.",
+              "affected": {
+                "node": "cabinet_dark-trim"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.013399833,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "Parts \"cabinet_smooth-structure_structure-gray\" and \"cabinet_accent-paint\" occupy the same space: they share 0.000248 m³, which is 1.3% of the smaller part.",
+              "affected": {
+                "node": "cabinet_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "intersectionVolumeFraction",
+                "actual": 0.012660701,
+                "expected": 0.001
+              },
+              "repairText": "Check whether this overlap is intentional, such as a joined beam or embedded detail. For unintended solid overlap, move a part or use boolDiff to cut clearance. This observation does not test intersections within a single mesh, open surfaces, empty passage space or motion."
+            },
+            {
+              "code": "GEO_PART_SELF_INTERSECTION_UNMEASURED",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.selfIntersection",
+              "message": "1 part-volume measurement was unavailable. 1 because a valid closed solid could not be measured (Not manifold): \"oxygen-maker_smooth-structure_structure-gray\". 13 overlapping part pairs include this part and were not measured. This part is not certified clear."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"oxygen-maker_smooth-structure_structure-gray\" reaches 0.0645 m inside solid \"cabinet_smooth-structure\": 93 of 1680 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "oxygen-maker_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0645032749,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 93,
+                  "sampledVertices": 1680
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"oxygen-maker_smooth-structure_structure-gray\" reaches 0.0585 m inside solid \"cabinet_smooth-structure_structure-gray\": 78 of 1680 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "oxygen-maker_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.0584800243,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 78,
+                  "sampledVertices": 1680
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            },
+            {
+              "code": "GEO_OPEN_SURFACE_PENETRATION",
+              "disposition": "observe",
+              "dimension": "visualQuality",
+              "profile": "geometry.openSurfacePenetration",
+              "message": "Open surface \"oxygen-maker_smooth-structure_structure-gray\" reaches 0.0080 m inside solid \"oxygen-maker_dark-trim\": 21 of 1680 sampled vertices lie deeper inside it than the 0.005 m contact tolerance.",
+              "affected": {
+                "node": "oxygen-maker_smooth-structure_structure-gray"
+              },
+              "measurement": {
+                "name": "openSurfacePenetrationDepth",
+                "actual": 0.00800001621,
+                "expected": 0.005,
+                "unit": "m",
+                "breakdown": {
+                  "penetratingVertices": 21,
+                  "sampledVertices": 1680
+                }
+              },
+              "repairText": "A positive here is not a defect. Most are intentional: a fitting set into a structural shell -- a lamp recess in a hull, a strut landing, a ridge into a cap -- puts shell vertices inside the solid by design, exactly as a bolt in a hole shares volume. Review the ones you did not intend, such as a cloth crossing a wall or a canopy pierced by a mast, and move the surface clear or cut it back to the solid. Vertices are the samples, so a solid thinner than this surface’s facet spacing can pass between two of them."
+            }
+          ],
+          "metrics": {
+            "partVolumeCoverage": "partial",
+            "partVolumeScope": "Visible static closed mesh pairs, except alternates on different LOD levels; excludes intra-mesh intersections, motion, open surfaces and usable passage space. Positive overlap may be intentional.",
+            "partVolumeEligibleParts": 15,
+            "partVolumeCandidatePairs": 26,
+            "partVolumeCandidatesLowerBound": false,
+            "partVolumePairsTested": 13,
+            "partVolumeUnmeasurablePairs": 13,
+            "partVolumePairsNotReached": 0,
+            "partVolumeLodAlternatePairs": 0,
+            "partVolumeSkipped": 1,
+            "openSurfaceCoverage": "complete-surface-pairs",
+            "openSurfaceScope": "Visible static open surfaces sampled at their vertices against visible static closed solids, except alternates on different LOD levels; excludes open-vs-open pairs, motion, and any solid thinner than the sampled surface's facet spacing. Penetration within the contact tolerance is treated as intended contact, and penetration beyond it may still be intentional, as a fitting socketed into a shell is.",
+            "openSurfaceContactTolerance": 0.005,
+            "openSurfaceOpenParts": 3,
+            "openSurfaceClosedParts": 12,
+            "openSurfaceCandidatePairs": 15,
+            "openSurfacePairsSampled": 15,
+            "openSurfacePairsNotReached": 0,
+            "openSurfaceVerticesUnresolved": 0,
+            "openSurfaceLodAlternatePairs": 0,
+            "openSurfaceSkipped": 0
+          }
+        },
+        "runtimeCost": {
+          "status": "pass",
+          "findings": [],
+          "metrics": {
+            "instanceabilityGrade": "C",
+            "instanceabilitySummary": "C (informational, not a QA verdict), set by 4 distinct materials (C at 4-6). Also: 12 geometries; 15 draw calls. Optional advice, not a requirement: merging smooth-structure + smooth-structure:structure-gray + dark-trim + accent-paint (differ in baseColorFactor, metallicFactor, roughnessFactor) would leave 1 material (A at 0-1).",
+            "uniqueGeometries": 12,
+            "uniqueMaterials": 4,
+            "meshNodes": 15,
+            "meshInstances": 15,
+            "drawCalls": 15,
+            "textureCount": 0,
+            "skinned": false,
+            "transparentMaterials": 0,
+            "triangles": 2484,
+            "materialCount": 4,
+            "opaqueMaterials": 4,
+            "maskedMaterials": 0,
+            "blendedMaterials": 0,
+            "singleSidedMaterials": 4,
+            "doubleSidedMaterials": 0,
+            "texturedMaterials": 0,
+            "materialExtensionCount": 0,
+            "materialExtensionsUsed": "",
+            "imageCount": 0,
+            "maxImageDimension": 0,
+            "decodedImageBytesRgba8": 0,
+            "estimatedGpuBytesWithMipmaps": 0,
+            "blendedSurfaceAreaRatio": 0
+          }
+        }
+      },
+      "rules": [
+        {
+          "id": "UNIVERSAL_SCENE_CONTENT_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_FINITE_DATA_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_INDEX_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ZERO_SCALE_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_NODE_NAME_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "UNIVERSAL_ANIMATION_TARGET_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "MATERIAL_PORTABLE_PBR_RULE",
+          "mode": "enforce",
+          "status": "evaluated"
+        },
+        {
+          "id": "ARCHITECTURE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ARCHITECTURE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "CHARACTER_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEHICLE_W6_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_CONTACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VEGETATION_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_CAPABILITY_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "PROP_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ENVIRONMENT_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_EXACT_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "VFX_ADVISORY_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "MODULAR_JOIN_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        },
+        {
+          "id": "ASSET_SCOPE_PROFILE",
+          "mode": "observe",
+          "status": "notRequested"
+        },
+        {
+          "id": "GEO_PART_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "notEvaluated"
+        },
+        {
+          "id": "GEO_PART_CONNECTIVITY",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "GEO_OPEN_SURFACE_PENETRATION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "REF_COMPARISON",
+          "mode": "observe",
+          "status": "notEvaluated",
+          "reason": "Neutral measurement adapter remains to be qualified; no category fallback is used."
+        },
+        {
+          "id": "SWEEP_SELF_INTERSECTION",
+          "mode": "observe",
+          "status": "evaluated"
+        },
+        {
+          "id": "HOST_VALIDATION_PROFILE",
+          "mode": "enforce",
+          "status": "notRequested"
+        }
+      ],
+      "unevaluatedRequirements": []
+    },
+    "dependencies": [],
+    "rebuild": "engine-required"
+  },
+  "preview": {
+    "fidelity": {
+      "version": "kiln.view-fidelity.v1",
+      "requested": "full-preferred",
+      "delivered": "full-material",
+      "materialFaithful": true,
+      "exactArtifact": true,
+      "rendererId": "dawn-vulkan:amd-radeon-vega-8-graphics-radv-raven-:radv: Mesa 26.1.8",
+      "inputGlbSha256": "sha256:39d74d2979a9bd3c10f97bb35db41a8a147bbf2488efcbd34b06d42b0eb3cf68",
+      "degraded": false,
+      "reasonCodes": []
+    },
+    "backdrop": "neutral"
+  }
+}

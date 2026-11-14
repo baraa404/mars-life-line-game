@@ -1,0 +1,289 @@
+{
+  "projectId": "mars-life-line",
+  "name": "Mars Life Line",
+  "brief": "Stylized low-poly assets for a browser game set on a Mars outpost (React Three Fiber + Three.js). Every asset follows the shared design profile and reference images. The project defines how things look, not which assets exist.",
+  "design": {
+    "style": "THE REFERENCE IMAGES ARE THE STYLE. Before authoring, open the crop for the asset category (references crop-*) and the hero scene; after rendering, compare side by side. If text and image disagree, the image wins.\nLook: tidy, toy-like Mars outpost. Chunky ivory-white machines, thick slate-grey frames, big chamfered corners and bold orange panels on smooth rusty terracotta soil. Irregular half-buried faceted rocks, ochre-lit mesas and dusty peach sky. Warm key, muted plum shadows, warm haze, small amber glows and rare cyan lights. Keep ivory readable; dust is restrained at lower edges. Hero scene governs smooth ground; sheet triangulation is display drift. Never photoreal, gritty or heavily weathered.\nShape: chamfer hard, about 6-12% of the smallest dimension; big structural corners cut until they read as octagons (door portals, crates, modules). Thick frames, ribs, plinths and rims; only masts and lattice struts are thin. Build from 2-3 stacked or butted chamfered blocks, not one extrusion. Props stand on heavy chamfered plinths (white with an orange band). Grey bands wrap edges and ends. Rocks, boulders and mountains are faceted (hull smooth:false); never include ground in an asset.\nColour blocking: white body, grey frames, bands and chassis, and orange as LARGE flat panels (corner or side panels, crate faces, dome base band, suit pads, wheel hubs), typically 10-35% of an object. Cyan is rare: 1-2 small lights per object. Emissives are outlines inside recesses, horizontal strips or small squares, never whole faces.\nCategory cues: astronaut about 4.5 heads tall, big round helmet with glossy black visor, orange pads at shoulder/elbow/knee/belt, backpack with cyan screen. Rover: 6 huge wheels (about 40% of height) with orange hubs, wedge-front armoured body, orange headlight bar, cyan roof bar. Habitat: octagonal door portal with glowing orange inner outline, grey doors and steps. Dome: thick white geodesic struts with hub plates, warm interior glow, orange/white base ring.\nMaterials: flat colours, no textures or normal maps, metalness <= 0.1, no mirror reflections; name each material by its role.\nAvoid: photorealism, PBR textures, random palettes, excessive neon, timid bevels, thin fiddly parts, clutter.\nFull guide: docs/style/STYLE_GUIDE.md. Values: src/style/tokens.json.",
+    "scale": "metres; +Y up; assets rest on Y=0; Kiln forward is +X. Reference sizes: astronaut 1.8 m tall, door 2.4 m, crate 1 m, rover 4.5 m long, habitat module 8 m long.",
+    "palette": [
+      {
+        "role": "space-deep",
+        "color": "#20283D"
+      },
+      {
+        "role": "shadow-plum",
+        "color": "#765768"
+      },
+      {
+        "role": "regolith-mid",
+        "color": "#B95C40"
+      },
+      {
+        "role": "regolith-light",
+        "color": "#E6A26A"
+      },
+      {
+        "role": "structure-white",
+        "color": "#F2E5D2"
+      },
+      {
+        "role": "structure-gray",
+        "color": "#686976"
+      },
+      {
+        "role": "trim-dark",
+        "color": "#303240"
+      },
+      {
+        "role": "accent-orange",
+        "color": "#FF8A24"
+      },
+      {
+        "role": "accent-cyan",
+        "color": "#54E5F5"
+      },
+      {
+        "role": "accent-blue",
+        "color": "#35CFFF"
+      },
+      {
+        "role": "glass-tint",
+        "color": "#EBD9C5"
+      },
+      {
+        "role": "cell-blue",
+        "color": "#2F58B8"
+      },
+      {
+        "role": "grow-magenta",
+        "color": "#E040FB"
+      },
+      {
+        "role": "plant-green",
+        "color": "#5A9E58"
+      },
+      {
+        "role": "ice-pale",
+        "color": "#D8EEF8"
+      },
+      {
+        "role": "sky-top",
+        "color": "#C98270"
+      },
+      {
+        "role": "sky-horizon",
+        "color": "#F2BE92"
+      }
+    ],
+    "materialRoles": [
+      {
+        "role": "matte-environment",
+        "description": "Terrain, rocks, craters, mountains. Fully matte, no reflections. (colours regolith-mid #B95C40, regolith-light #E6A26A, shadow-plum #765768; roughness 0.95; metalness 0)"
+      },
+      {
+        "role": "smooth-structure",
+        "description": "Buildings, modules, vehicles, suits, crates. Clean satin finish, never mirror-like. (colours structure-white #F2E5D2, structure-gray #686976; roughness 0.55; metalness 0.05)"
+      },
+      {
+        "role": "accent-paint",
+        "description": "Non-glowing orange colour blocking: side panels, crate faces, dome base band, suit pads, wheel hubs. (colours accent-orange #FF8A24; roughness 0.6; metalness 0)"
+      },
+      {
+        "role": "dark-trim",
+        "description": "Tyres, recesses, joints, vents. (colours trim-dark #303240; roughness 0.85; metalness 0)"
+      },
+      {
+        "role": "emissive-warm",
+        "description": "Door frames, window strips, headlights. Selected surfaces only. (colours accent-orange #FF8A24; roughness 0.5; metalness 0; emissive #FF8A24 x1.6)"
+      },
+      {
+        "role": "emissive-cool",
+        "description": "Beacons, indicators, screens. Smaller and rarer than warm lights. (colours accent-cyan #54E5F5, accent-blue #35CFFF; roughness 0.5; metalness 0; emissive #54E5F5 x1.4)"
+      },
+      {
+        "role": "glass",
+        "description": "Greenhouse domes, module windows. Light tint, soft highlight, see-through. (colours glass-tint #EBD9C5; roughness 0.15; metalness 0; opacity 0.35)"
+      },
+      {
+        "role": "visor",
+        "description": "Helmet visors and vehicle windshields. Opaque near-black, glossy, shows a soft highlight. (colours space-deep #20283D; roughness 0.12; metalness 0.1)"
+      },
+      {
+        "role": "solar-cell",
+        "description": "Solar panel cell faces. Deep blue, semi-gloss, framed by structure-white grid bars. (colours cell-blue #2F58B8; roughness 0.35; metalness 0.1)"
+      }
+    ],
+    "conventions": [
+      "Start every .kiln.js source from assets/style/mars-style.header.kiln.js and use its STYLE materials; do not invent colours.",
+      "Triangle budgets (LOD0): small-prop 200-1500, medium-prop 1500-6000, vehicle 3000-9000, building 4000-12000, character 3000-8000, rock 40-400. Declare the category budget with defineBudget().",
+      "Radial segments: small 8, default 12, large 16.",
+      "Use gameMaterial with the role name as material name so the game can find and tune materials.",
+      "Ground contact at Y=0, +X forward, metres. Keep real-world scale; stylise proportions, not overall size.",
+      "Atmosphere entries (sky-*) belong to the backdrop only. The space-deep token is for opaque visors, not the daytime sky.",
+      "Name the closest reference crop in the brief before authoring. Review with --render gpu (material-faithful) at a 3/4 angle and compare side by side with that crop (STYLE_GUIDE.md section 9) before accepting."
+    ],
+    "exceptions": []
+  },
+  "deliveryProfiles": [
+    {
+      "id": "web-r3f",
+      "target": "three",
+      "description": "GLB loaded with drei useGLTF in React Three Fiber; optimized with glTF Transform (meshopt) by scripts/asset-pipeline.mjs.",
+      "performanceIntent": "Browser game on integrated GPUs: few materials per asset, flat colours, no textures by default.",
+      "constraints": [
+        "Self-contained GLB",
+        "Material names equal style roles",
+        "No textures unless recorded in the brief"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "hero-scene",
+      "title": "01-hero-scene.png",
+      "uri": "docs/style/references/01-hero-scene.png",
+      "description": "THE TARGET. Base, greenhouse dome, rover, crates, faceted rust-red rocks on smooth dusty ground, eroded mesas and peach atmospheric sky.",
+      "sha256": "sha256:cac787867b6ff663d23b1a51b4abc124874283578cae0db0b951a54e01386b4d"
+    },
+    {
+      "id": "style-board",
+      "title": "02-style-board.png",
+      "uri": "docs/style/references/02-style-board.png",
+      "description": "Palette swatches, material spheres, geometry primitives, environment pieces, lighting panel.",
+      "sha256": "sha256:fb606c75f42bbe1c22f8d739198fb179d6949935a6b3ac2a120736afbdfe2923"
+    },
+    {
+      "id": "asset-style-sheet",
+      "title": "03-asset-style-sheet.png",
+      "uri": "docs/style/references/03-asset-style-sheet.png",
+      "description": "One panel per category: astronauts, rover, habitat/dome/module, props, rocks/crater.",
+      "sha256": "sha256:04f76339407e31c6b8482eec1ff13bc7ddadbf44e591cbb65b18fb4c727198a5"
+    },
+    {
+      "id": "crop-characters",
+      "title": "crops/characters.png",
+      "uri": "docs/style/references/crops/characters.png",
+      "description": "Characters: stocky astronaut, big helmet + black visor, orange joint pads, backpack screen.",
+      "sha256": "sha256:8ca4478975eb5d1dd4f66c3636566632c7ac61c08612e17e0b628d0a06019300"
+    },
+    {
+      "id": "crop-vehicles",
+      "title": "crops/vehicles.png",
+      "uri": "docs/style/references/crops/vehicles.png",
+      "description": "Vehicles: 6 huge wheels with orange hubs, white/grey armoured body, orange headlight bar, cyan roof bar.",
+      "sha256": "sha256:df8972342085c564e6f50f28ca10a3bc5699c7eda96cf10a4438aa1a6b6c63b1"
+    },
+    {
+      "id": "crop-vehicles-hero",
+      "title": "crops/vehicles-hero.png",
+      "uri": "docs/style/references/crops/vehicles-hero.png",
+      "description": "Rover in the hero scene under game lighting.",
+      "sha256": "sha256:063c5c44517505e76520f178fbafd63fbbba83e00ba4e373fa1c018a1a7851d1"
+    },
+    {
+      "id": "crop-architecture",
+      "title": "crops/architecture.png",
+      "uri": "docs/style/references/crops/architecture.png",
+      "description": "Habitat with octagonal glowing door portal, geodesic dome, module with window strip.",
+      "sha256": "sha256:329b1aa6287e750b245cb6e866f8ca28225fb8310239a069a7d4739c9d8ec6dc"
+    },
+    {
+      "id": "crop-architecture-examples",
+      "title": "crops/architecture-examples.png",
+      "uri": "docs/style/references/crops/architecture-examples.png",
+      "description": "Row of buildings/props in the same style at small scale.",
+      "sha256": "sha256:c88618adf296018c60ade754b0a447f1530f1aae7c7ecc2a5d46e730ca22e742"
+    },
+    {
+      "id": "crop-architecture-hero-base",
+      "title": "crops/architecture-hero-base.png",
+      "uri": "docs/style/references/crops/architecture-hero-base.png",
+      "description": "Main base in context: stacked blocks, corridor modules, roof antennas and dish.",
+      "sha256": "sha256:82c39163efc5b64a5f7954c799fcafeb1a37403d7de412ffeb47596ef76dfa2d"
+    },
+    {
+      "id": "crop-architecture-hero-dome",
+      "title": "crops/architecture-hero-dome.png",
+      "uri": "docs/style/references/crops/architecture-hero-dome.png",
+      "description": "Greenhouse dome and crate in context.",
+      "sha256": "sha256:c0b81aa3301e97b1193827f0e3d278ed88fb43e2c1b0f908aaf85581997c3667"
+    },
+    {
+      "id": "crop-props",
+      "title": "crops/props.png",
+      "uri": "docs/style/references/crops/props.png",
+      "description": "Props: crate, tanks, solar panel, dish, cyan beacon, lattice tower; all on chunky plinths.",
+      "sha256": "sha256:de5ce5a29705bc092e04c8bc43e1bc3105fa3aeae7ed3326ad6e5b33edfeb405"
+    },
+    {
+      "id": "crop-environment",
+      "title": "crops/environment.png",
+      "uri": "docs/style/references/crops/environment.png",
+      "description": "Faceted boulders in clusters, flat mesa rock, crater with raised stepped rim.",
+      "sha256": "sha256:341f57f44dec0eae20191d119e3241bdb33fcfd4a7d74990e56c5b3f484da0b3"
+    },
+    {
+      "id": "crop-environment-board",
+      "title": "crops/environment-board.png",
+      "uri": "docs/style/references/crops/environment-board.png",
+      "description": "Rust-red boulders, layered eroded mesa, angular ridge and shallow crater.",
+      "sha256": "sha256:13369830f8f9ff935713ddfe6e25610b809f4d334a62db0ac8a7df6857131b29"
+    },
+    {
+      "id": "crop-environment-hero-ground",
+      "title": "crops/environment-hero-ground.png",
+      "uri": "docs/style/references/crops/environment-hero-ground.png",
+      "description": "Smooth mottled ground with half-buried faceted rocks and pebbles.",
+      "sha256": "sha256:aa56ca951403ba918d7b27f474687b48ff1450d99660623bcfd2f537c07dcd50"
+    },
+    {
+      "id": "crop-lighting-atmosphere",
+      "title": "crops/lighting-atmosphere.png",
+      "uri": "docs/style/references/crops/lighting-atmosphere.png",
+      "description": "Warm ivory/peach lit faces, muted plum shadows, dusty atmospheric haze and distant mesas.",
+      "sha256": "sha256:b51e070f6cdaa11cc485a6744d4df8dad825320478c4ada43287938bc9751bad"
+    },
+    {
+      "id": "crop-lighting-hero-sky",
+      "title": "crops/lighting-hero-sky.png",
+      "uri": "docs/style/references/crops/lighting-hero-sky.png",
+      "description": "Dusty rose-to-peach sky, layered eroded mesa horizon and warm haze; no prominent planet or star field.",
+      "sha256": "sha256:c7e06ba740f320eca506675e54b756c7e3e4ff9c1f7e3eb8106e9382746410af"
+    },
+    {
+      "id": "crop-palette-materials-geometry",
+      "title": "crops/palette-materials-geometry.png",
+      "uri": "docs/style/references/crops/palette-materials-geometry.png",
+      "description": "Palette swatches, matte/satin/emissive material spheres, chunky primitives; tokens define numeric values.",
+      "sha256": "sha256:e6ea0692e74d3d282bb41ff18d69456ace697bafeae0c5e5ae8f53d950139d02"
+    },
+    {
+      "id": "gen-construction-details",
+      "title": "generated/g01-construction-details.jpg",
+      "uri": "docs/style/references/generated/g01-construction-details.jpg",
+      "description": "Supplementary Mars sheet (primary references win): chamfered corner, door portal, window strip, plinth, rib bands, lights.",
+      "sha256": "sha256:069811818ed139a73568ec0fa51cd1594d0bbccafecb02f3e1ac025cfae540c8"
+    },
+    {
+      "id": "gen-more-props",
+      "title": "generated/g02-more-props.jpg",
+      "uri": "docs/style/references/generated/g02-more-props.jpg",
+      "description": "Supplementary Mars sheet (primary references win): containers, generator, fuel pump, railing, rack, airlock ring, tool cart.",
+      "sha256": "sha256:1fdf7b0a95a087108d6de561ef3c50d02c3ce669de51da72707e5e100f59f918"
+    },
+    {
+      "id": "gen-small-items",
+      "title": "generated/g03-small-items.jpg",
+      "uri": "docs/style/references/generated/g03-small-items.jpg",
+      "description": "Supplementary Mars sheet (primary references win): pickup items. Drawn oversized; keep real scale.",
+      "sha256": "sha256:56175d5464b8b75f0ca137eb01e8899f5e2197d5fb0af727459efb1943e7b5e1"
+    },
+    {
+      "id": "gen-terrain-variety",
+      "title": "generated/g04-terrain-variety.jpg",
+      "uri": "docs/style/references/generated/g04-terrain-variety.jpg",
+      "description": "Supplementary Mars sheet (primary references win): rust-red rock/crater/mesa/ridge range; irregular squashed half-buried boulders, smooth ground patch.",
+      "sha256": "sha256:b6796ee09a82870cfd4d5c61ce73b2bbce489f04aae27b5a4b57a5e2c6bb57be"
+    }
+  ]
+}
