@@ -38,3 +38,10 @@ jobs:
       - name: Publish game
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify live game and assets
+        env:
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for path in '' 'models/pebble.glb' 'ui/icons/pebble.svg' 'audio/sfx/pebble-hello.wav'; do
+            curl --fail --silent --show-error --retry 8 --retry-delay 5 --retry-all-errors "${PAGES_URL}${path}" --output /dev/null
+          done

@@ -39,6 +39,16 @@ This is a playable project under active development. The design documents also d
 
 ![PEBBLE's in-game chat and mission interface](public/screenshots/pebble_chat_open.png)
 
+### Fresh screenshots
+
+Captured from the running game: the landing cabin, the station management view, and the walk to ARES-7.
+
+![Entering the Martian atmosphere from the landing cabin](docs/screenshots/landing-cabin.jpg)
+
+![Overhead station management and resource systems](docs/screenshots/station-management.jpg)
+
+![Walking toward ARES-7 on Mars](docs/screenshots/station-walk.jpg)
+
 ### The visual direction
 
 The world uses chunky silhouettes, ivory machinery, orange panels, dark recesses, and warm terracotta landscapes.

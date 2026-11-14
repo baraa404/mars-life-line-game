@@ -28,6 +28,7 @@ async function fixture() {
   const manifest = JSON.parse(await readFile(new URL('../../public/audio/manifest.json', import.meta.url), 'utf8'))
   let source = await readFile(new URL('../../src/game/audio/audio.ts', import.meta.url), 'utf8')
   source = source.replace(/^import manifest .*$/m, 'const manifest = ' + JSON.stringify(manifest))
+  source = source.replace(/^import \{ publicUrl \} .*$/m, 'import { publicUrl } from ' + JSON.stringify(new URL('../../src/publicUrl.ts', import.meta.url).href))
   const js = stripTypeScriptTypes(source)
   const { gameAudio } = await import('data:text/javascript,' + encodeURIComponent(js) + '#' + Math.random())
   const flush = () => new Promise(resolve => setImmediate(resolve))
