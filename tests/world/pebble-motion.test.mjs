@@ -2,7 +2,26 @@ import { LANDING_PAD_X } from '../../src/game/world/siteLayout.ts'
 import { PEBBLE_ARRIVAL } from '../../src/game/missions/m0.ts'
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { pebbleCanOccupy, pebbleFollowState, pebbleMotionStep, PEBBLE_DOCK } from '../../src/game/world/pebbleMotion.ts'
+import { pebbleCanOccupy, pebbleFollowState, pebbleMotionStep, pebbleSteeringStep, PEBBLE_DOCK } from '../../src/game/world/pebbleMotion.ts'
+
+test('a stationary target behind an obstacle does not cause back-and-forth detours', () => {
+  for (const hz of [30, 60, 120]) {
+    let x = 0, z = 0
+    for (let frame = 0; frame < hz * 10; frame++) {
+      const next = pebbleSteeringStep(x, z, 6, 0, 3 / hz, nextX => nextX <= 0)
+      if (next) { x = next.x; z = next.z }
+    }
+    assert.deepEqual([x, z], [0, 0], 'waits at the wall instead of shuffling sideways')
+    const next = pebbleSteeringStep(x, z, -6, 0, 3 / hz, nextX => nextX <= 0)
+    assert(next && next.x < 0, 'can approach again when the target moves onto a clear path')
+  }
+})
+
+test('a clear side approach still gets around an obstacle without moving away from the goal', () => {
+  const next = pebbleSteeringStep(0, 0, 6, 0, .1, (_x, z) => z > .01)
+  assert(next && next.z > .01)
+  assert(Math.hypot(6 - next.x, next.z) < 6)
+})
 
 test('companion uses separate follow and stop radii without circling on heading changes', () => {
   assert.equal(pebbleFollowState(4, false, 0).following, false)

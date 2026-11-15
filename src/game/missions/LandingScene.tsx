@@ -180,7 +180,7 @@ function Cockpit({ stage, reduced, pressure, suitColor, onSuit, onSeal, onCycle,
       </group>
     )}
 
-    {stage === 'suit' && (
+    {!['seal', 'cycle', 'exit'].includes(stage) && (
       <Suspense fallback={null}>
         <CabinProp id="astronaut-suit-rack" position={[2.0, 0.92, -0.8]} suitColor={suitColor} />
         <CabinProp id="helmet-shelf" position={[1.69, 1.75, -1.75]} rotationY={Math.PI} />

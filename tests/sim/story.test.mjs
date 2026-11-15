@@ -63,6 +63,37 @@ test('a careful commander finishes in about ten minutes with Mission Success', (
   assert.ok(s.dose < 100)
 })
 
+test('continue playing keeps the completed station and resumes time and interactions', () => {
+  const completed = playthrough({ power: 'clean', mode: 'balanced', storm: 'emergency', cover: true })
+  for (const ending of ['success', 'improve']) {
+    const input = { ...completed, ending }
+    const result = act(input, { type: 'continue' })
+    assert.equal(result.ok, true)
+    assert.deepEqual(result.state, { ...input, ending: null }, 'keeps resources, decisions and completed mission')
+    assert.equal(input.ending, ending, 'does not mutate the result screen state')
+    assert.deepEqual(nextSpots(result.state), [], 'does not send the player to submit the report again')
+    const resumed = tick(result.state, 1).state
+    assert.equal(resumed.time, completed.time + 1)
+    assert.equal(act(resumed, { type: 'leaveHab' }).ok, true)
+    assert.equal(act(resumed, { type: 'report' }).ok, false, 'does not reopen the ending')
+    const ready = structuredClone(resumed)
+    ready.trays[0] = { ...ready.trays[0], growth: 1, harvested: false, blocked: false }
+    const harvested = act(ready, { type: 'harvest', tray: 0 })
+    assert.equal(harvested.ok, true)
+    assert(harvested.state.food > ready.food)
+    assert.equal(harvested.state.trays[0].harvested, false, 'replants so continued play can grow more food')
+    assert.equal(harvested.state.scene, 8)
+  }
+})
+
+test('continue playing cannot skip the mission or revive a lost commander', () => {
+  for (const input of [createStory('gale'), { ...createStory('gale'), scene: 8, ending: 'lost' }]) {
+    const result = act(input, { type: 'continue' })
+    assert.equal(result.ok, false)
+    assert.equal(result.state, input)
+  }
+})
+
 test('risky choices show their consequences and end with Improvements Needed', () => {
   const s = playthrough({ power: 'backup', mode: 'farming', storm: 'farming', cover: false, late: true })
   assert.equal(s.ending, 'improve', JSON.stringify(grade(s).checks))

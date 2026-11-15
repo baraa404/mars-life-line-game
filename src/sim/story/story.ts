@@ -120,6 +120,7 @@ export type StoryAction =
   | { type: 'secure'; system: 'oxygen' | 'recycler' }
   | { type: 'shelter' }
   | { type: 'report' }
+  | { type: 'continue' }
 
 export interface StoryResult { state: StoryState; ok: boolean; message: string; lines: Line[] }
 
@@ -259,6 +260,11 @@ export function act(input: StoryState, action: StoryAction): StoryResult {
   const s = structuredClone(input), lines: Line[] = []
   const fail = (message: string): StoryResult => ({ state: input, ok: false, message, lines: [] })
   const done = (message = ''): StoryResult => ({ state: s, ok: true, message, lines })
+  if (action.type === 'continue') {
+    if (s.scene !== 8 || !s.ending || s.ending === 'lost') return fail('Finish the mission before continuing.')
+    s.ending = null
+    return done()
+  }
   if (s.ending) return fail('The mission is complete.')
   switch (action.type) {
     case 'enterHab':
@@ -379,7 +385,7 @@ export function act(input: StoryState, action: StoryAction): StoryResult {
       if (!tray || tray.harvested) return fail('')
       if (!trayReady(tray)) return fail(tray.blocked ? 'This tray is thirsty. Clear its drip line first.' : `Not ready yet: ${round(tray.growth * 100)}%.`)
       const food = tray.dead ? 0 : tray.stalled > RATES.stallLimit ? RATES.foodPerTray / 2 : RATES.foodPerTray
-      tray.harvested = true; tray.growth = 0; tray.crop = 2; s.food += food; s.harvested++
+      tray.harvested = s.scene < 8; tray.growth = 0; tray.crop = 2; s.food += food; s.harvested++
       if (s.harvested === TRAY_COUNT) {
         s.decisions.push(`Harvested the first crops: food for ${round(s.food)} days.`)
         for (const t of s.trays) t.harvested = false
@@ -460,6 +466,7 @@ export const SCENE_TITLES = ['', 'Arrival on Mars', 'Restore the Power', 'Life S
 export function brief(s: StoryState): SceneBrief {
   const base = { scene: s.scene, title: SCENE_TITLES[s.scene], time: '' }
   switch (s.scene) {
+    case 8: return { ...base, title: 'Continue exploring', goals: [] }
     case 1: return { ...base, goals: [
       { id: 'enter', text: 'Enter the ARES-7 hab', done: s.inHab || s.terminalSeen, spot: 'hab' },
       { id: 'terminal', text: 'Check the station status at the control terminal', done: s.terminalSeen, spot: 'terminal' },

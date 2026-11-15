@@ -500,12 +500,12 @@ function End({ s }: { s: StoryState }) {
       <p className="story-beginning">YOUR MISSION IS ONLY THE BEGINNING.</p>
 
       {/* 6. Big Friendly Action Buttons */}
-      <EndActions again={success ? '🚀 Play Again!' : '↺ Try Again!'} />
+      <EndActions again={success ? '🚀 Play Again!' : '↺ Try Again!'} canContinue />
     </div>
   </Modal>
 }
 
-function EndActions({ again }: { again: string }) {
+function EndActions({ again, canContinue = false }: { again: string; canContinue?: boolean }) {
   return <div className="kid-actions-row">
     <button
       className="kid-btn-play"
@@ -513,6 +513,9 @@ function EndActions({ again }: { again: string }) {
     >
       {again}
     </button>
+    {canContinue && <button className="kid-btn-menu" onClick={() => {
+      if (useStoryStore.getState().dispatch({ type: 'continue' })) closePanel()
+    }}>Continue Playing</button>}
     <button
       className="kid-btn-menu"
       onClick={() => {
@@ -672,7 +675,7 @@ export function StoryHud() {
     {quiet && !station && captureHint && <p className="oh-capture" role="status">{captureHint}</p>}
     {airlock && <div className="oh-airlock" role="status">
       <strong>Airlock</strong>
-      <span>{airlock === 'hab' ? 'Pumping air in… the inner door opens when the pressure is safe.' : 'Pumping air out… so the hab keeps its precious air.'}</span>
+      <span>{airlock === 'hab' ? 'Pumping air in… We match the hab’s pressure before opening the inner door, so its breathable air stays inside.' : 'Pumping air out… Mars has very low air pressure. We lower the chamber pressure first so air won’t rush out when the outer door opens.'}</span>
       <span className={'oh-airlock-bar ' + (airlock === 'hab' ? 'fill' : 'empty')}><i /></span>
     </div>}
     <div className={'scene-fade' + (fading ? ' active' : '')} aria-hidden="true" />

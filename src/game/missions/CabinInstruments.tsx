@@ -84,10 +84,10 @@ export function CabinInstruments({ room, stage, pressure, active, clock, onDesce
     { id: 'aux', point: [1.53, 1.8, 1.0], range: 2, label: 'Toggle auxiliary bus', use: () => setAuxiliary(value => !value) },
     { id: 'arm', point: CABIN_CONTROLS.arm, range: 2, label: 'Arm descent', hold: true, enabled: stage === 'arm', use: () => onDescent?.() },
     { id: 'throttle', point: CABIN_CONTROLS.throttle, range: 2, label: 'Pull descent throttle', enabled: stage === 'arm', use: () => { setThrottle(true); onDescent?.() } },
-    { id: 'suit', point: CABIN_CONTROLS.suit, range: 2, label: 'Confirm suit check', enabled: stage === 'suit', use: onSuit },
-    { id: 'seal', point: CABIN_CONTROLS.hatch, range: 2, label: 'Seal cabin hatch', hold: true, enabled: stage === 'seal', use: onSeal },
+    { id: 'suit', point: CABIN_CONTROLS.suit, range: 3, aimRadius: 1.2, label: 'Confirm suit check', enabled: stage === 'suit', use: onSuit },
+    { id: 'seal', point: CABIN_CONTROLS.hatch, range: 3, aimRadius: 1.2, label: 'Seal cabin hatch', hold: true, enabled: stage === 'seal', use: onSeal },
     { id: 'cycle', point: CABIN_CONTROLS.cycle, range: 2, label: 'Pull pressure cycle lever', hold: true, enabled: stage === 'cycle' && !cycling, use: onCycle },
-    { id: 'exit', point: CABIN_CONTROLS.hatch, range: 2, label: 'Open outer hatch', hold: true, enabled: stage === 'exit', use: onExit },
+    { id: 'exit', point: CABIN_CONTROLS.hatch, range: 3, aimRadius: 1.2, label: 'Open outer hatch', hold: true, enabled: stage === 'exit', use: onExit },
   ]
 
   const displayTime = useRef(0)

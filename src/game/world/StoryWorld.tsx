@@ -100,7 +100,7 @@ function useStoryTargets() {
     })
     STORY_POINTS.trays.forEach((point, i) => {
       const tray = s.trays[i]
-      const harvest = s.scene === 4 && trayReady(tray) && s.harvested < 3
+      const harvest = trayReady(tray) && (s.scene === 4 && s.harvested < 3 || s.scene === 8)
       outside({ id: 'story-tray-' + i, point, range: 3.8, aimRadius: 1.3, enabled: s.scene >= 4 && s.ghValve && s.ghLights,
         hold: tray.blocked || harvest, holdSeconds: tray.blocked ? 1.8 : 1.4,
         label: tray.blocked ? `Clear tray ${i + 1}’s blocked drip line` : harvest ? `Harvest tray ${i + 1}` : `Check tray ${i + 1}`,

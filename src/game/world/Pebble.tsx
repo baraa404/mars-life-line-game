@@ -9,7 +9,7 @@ import { AnimationMixer, Group, LoopOnce, MathUtils, Mesh, MeshBasicMaterial, SR
 import { useMissionStore } from '../../state/useMissionStore'
 import { palette } from '../../style/tokens'
 import type { Point } from './habLayout'
-import { PEBBLE_DOCK, pebbleCanOccupy, pebbleFollowState, PEBBLE_FOLLOW_STOP, pebbleMotionStep } from './pebbleMotion'
+import { PEBBLE_DOCK, pebbleCanOccupy, pebbleFollowState, PEBBLE_FOLLOW_STOP, pebbleMotionStep, pebbleSteeringStep } from './pebbleMotion'
 import { surfaceHeight } from './landscape'
 import { jobTargets } from './stationModules'
 import { useInteractionTargets } from '../interaction/Interaction'
@@ -20,7 +20,6 @@ type Face = typeof faces[number]
 const yard: Point = [1, 0, 9]
 const routeJunction: Point = [8, 0, 6]
 const playfulReplies = ['Boop received. Dignity rebooting…', 'You rock. I’m PEBBLE. We’re basically family.', 'Tiny robot. ENORMOUS enthusiasm.', 'That tickles my circuits!']
-const searchAngles = [0, .55, -.55, 1.15, -1.15, 1.75, -1.75]
 
 export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
   const { scene, animations } = useGLTF(publicUrl('/models/pebble.glb'))
@@ -33,7 +32,7 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
   const bumper = useMemo(() => new rapier.Ball(.24), [rapier])
   const tracks = useRef({ clip: '', face: '' as Face | '', speed: 0, guiding: false, syncedAt: -10, hint: 0, progressAt: 0, pointingUntil: 0,
     arrival: -1, card: '', reactionUntil: 0, glitchSince: 0, pos: new Vector3(...yard), goal: new Vector3(), following: false,
-    heading: new Vector3(), lastPlayer: new Vector3(), acknowledgedAt: -10 })
+    heading: new Vector3(), lastPlayer: new Vector3(), acknowledgedAt: -10, blockedGoal: null as Vector3 | null })
   const [quip, setQuip] = useState('')
   const play = useRef({ remaining: 0, count: 0 })
   const dust = useRef<Group>(null)
@@ -161,30 +160,30 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
     const followingPlayer = playerOutdoors && !state.guiding && !guideTo && !charge && !workingOutside
     state.following = followingPlayer && follow.following
     const stoppedAt = guideTo ? 1.6 : charge || workingOutside ? .35 : followingPlayer ? PEBBLE_FOLLOW_STOP : .3
+    // Retry a blocked approach only once the player or task target has moved.
+    if (state.blockedGoal && state.goal.distanceToSquared(state.blockedGoal) > .25) state.blockedGoal = null
     // Station view parks the companion; explicitly assigned jobs can still travel.
     const mayMove = (ui.view === 'firstPerson' || !!work) && !playful && !ui.paused && (!ui.openPanel || !!ui.currentCard) && (!ui.decisionOpen || nearby && !work) && !ui.fading && (playerOutdoors || !!work || charge) && (!followingPlayer || state.following)
     const guideSpeed = 2.7 * MathUtils.clamp((9 - playerDist) / 2, 0, 1)
     const motion = pebbleMotionStep(state.speed, dist, stoppedAt, guideTo ? guideSpeed * 1.3 : workingOutside ? 4 : state.guiding ? guideSpeed : followingPlayer ? follow.maxSpeed : 5.8, delta)
     state.speed = mayMove && canFollow ? motion.speed : 0
     let moved = false
-    if (canFollow && mayMove && motion.step > 0) {
-      const desired = Math.atan2(-(state.goal.z - state.pos.z), state.goal.x - state.pos.x)
-      for (const offset of searchAngles) {
-        const direction = desired + offset
-        state.heading.set(Math.cos(direction), 0, -Math.sin(direction))
-        const nextX = state.pos.x + state.heading.x * motion.step
-        const nextZ = state.pos.z + state.heading.z * motion.step
-        if (!pebbleCanOccupy(nextX, nextZ)) continue
+    if (canFollow && mayMove && motion.step > 0 && !state.blockedGoal) {
+      const next = pebbleSteeringStep(state.pos.x, state.pos.z, state.goal.x, state.goal.z, motion.step, (nextX, nextZ, headingX, headingZ) => {
+        if (!pebbleCanOccupy(nextX, nextZ)) return false
+        state.heading.set(headingX, 0, headingZ)
         const blocked = world.castShape({ x: state.pos.x, y: state.pos.y + .34, z: state.pos.z },
           { x: 0, y: 0, z: 0, w: 1 }, state.heading, bumper, 0, motion.step + .28, false,
           rapier.QueryFilterFlags.ONLY_FIXED, undefined, undefined, handle.body)
-        if (blocked) continue
-        state.pos.addScaledVector(state.heading, motion.step)
-        const turn = MathUtils.euclideanModulo(direction - robot.rotation.y + Math.PI, Math.PI * 2) - Math.PI
+        return !blocked
+      })
+      if (next) {
+        state.pos.x = next.x
+        state.pos.z = next.z
+        const turn = MathUtils.euclideanModulo(next.angle - robot.rotation.y + Math.PI, Math.PI * 2) - Math.PI
         robot.rotation.y += turn * (1 - Math.exp(-8 * motion.dt))
         moved = true
-        break
-      }
+      } else state.blockedGoal = state.goal.clone()
     }
     if (!moved) state.speed = 0
     state.pos.y = surfaceHeight(state.pos.x, state.pos.z)

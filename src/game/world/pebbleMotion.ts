@@ -18,6 +18,22 @@ export function pebbleCanOccupy(x: number, z: number) {
   return !buildings.some(b => x > b.minX && x < b.maxX && z > b.minZ && z < b.maxZ)
 }
 
+/** Stop at a blocked approach instead of backing away and immediately steering back. */
+export function pebbleSteeringStep(
+  x: number, z: number, goalX: number, goalZ: number, step: number,
+  canStep: (nextX: number, nextZ: number, headingX: number, headingZ: number) => boolean,
+) {
+  const distance = Math.hypot(goalX - x, goalZ - z)
+  const desired = Math.atan2(-(goalZ - z), goalX - x)
+  for (const offset of [0, .55, -.55, 1.15, -1.15]) {
+    const angle = desired + offset, headingX = Math.cos(angle), headingZ = -Math.sin(angle)
+    const nextX = x + headingX * step, nextZ = z + headingZ * step
+    if (Math.hypot(goalX - nextX, goalZ - nextZ) >= distance) continue
+    if (canStep(nextX, nextZ, headingX, headingZ)) return { x: nextX, z: nextZ, angle }
+  }
+  return null
+}
+
 /** Hysteresis keeps the companion settled until the player leaves its comfort radius. */
 export const PEBBLE_FOLLOW_STOP = 3
 export const PEBBLE_FOLLOW_START = 4.2

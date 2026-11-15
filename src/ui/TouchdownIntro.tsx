@@ -27,7 +27,7 @@ const beats: Record<LandingStage, [string,string]> = {
   signal: ['Message sent','Our signal is on its way. Earth will know in ten Mars minutes.'],
   suit: ['Suit check','Your suit air came from the ship. The hab can refill it later.'],
   seal: ['Ship airlock','Turn the wheel to seal the cabin hatch.'],
-  cycle: ['Pressure cycle','Pull the cyan lever beside the hatch wheel. The outer hatch unlocks when pressure drops below 1%.'],
+  cycle: ['Pressure cycle','Pull the cyan lever beside the hatch wheel. Mars has very low air pressure, so we lower the chamber pressure first to prevent air from rushing out when the outer hatch opens.'],
   exit: ['Step onto Mars','Open the outer hatch. PEBBLE is waiting on the pad.'],
 }
 

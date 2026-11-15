@@ -700,6 +700,33 @@
 .story-isometric-confirm .oh-primary {
   width: 100%;
 }
+.story-terminal .oh-primary,
+.story-isometric-confirm .oh-primary {
+  color: var(--oh-ink);
+  background: var(--accent-orange);
+  border: 2px solid color-mix(in srgb, var(--accent-orange) 60%, black);
+  border-radius: 12px;
+  padding: .55em .8em;
+  font: 800 1.25em var(--display);
+  cursor: pointer;
+}
+.story-terminal .oh-primary:not(:disabled):hover,
+.story-terminal .oh-primary:not(:disabled):focus-visible,
+.story-isometric-confirm .oh-primary:not(:disabled):hover,
+.story-isometric-confirm .oh-primary:not(:disabled):focus-visible {
+  background: color-mix(in srgb, var(--accent-orange) 85%, white);
+  color: var(--oh-ink);
+  outline: 2px solid var(--oh-ink);
+  outline-offset: 2px;
+}
+.story-terminal .oh-primary:disabled,
+.story-isometric-confirm .oh-primary:disabled {
+  color: var(--oh-ink);
+  background: color-mix(in srgb, var(--structure-white) 85%, var(--structure-gray));
+  border-color: var(--structure-gray);
+  opacity: 1;
+  cursor: not-allowed;
+}
 .story-isometric-actions {
   display: flex;
   gap: .4em;
