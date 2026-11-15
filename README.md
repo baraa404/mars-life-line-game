@@ -30,11 +30,6 @@ Cleaning the solar panels takes time outside. Backup power is quick, but finite.
 This is a playable project under active development. The design documents also describe longer-term ideas beyond the current mission.
 
 ## A closer look
-
-### Touchdown on Mars
-
-![Landing ship on its pad in the Martian landscape](models%20and%20assets%20images/landing-ship-on-pad.png)
-
 ### Your robot companion
 
 ![PEBBLE's in-game chat and mission interface](public/screenshots/pebble_chat_open.png)
