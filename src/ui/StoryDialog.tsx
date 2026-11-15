@@ -62,7 +62,7 @@ export const StoryDialog = memo(function StoryDialog() {
 
   if (!line) return null
   const control = line.who === 'control'
-  const face = control ? publicUrl('/ui/icons/earth-link.svg') : `/ui/pebble-faces/${line.mood === 'very-happy' ? 'very-happy' : line.mood ?? 'happy'}.svg`
+  const face = control ? publicUrl('/ui/icons/earth-link.svg') : publicUrl(`/ui/pebble-faces/${line.mood === 'very-happy' ? 'very-happy' : line.mood ?? 'happy'}.svg`)
   return <section data-mouse className={'story-dialog' + (control ? ' control' : '') + (fresh ? '' : ' idle')} aria-live="polite" onClick={next}>
     <img className="story-face" src={face} alt="" />
     <div className="story-words">

@@ -161,7 +161,8 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
     const followingPlayer = playerOutdoors && !state.guiding && !guideTo && !charge && !workingOutside
     state.following = followingPlayer && follow.following
     const stoppedAt = guideTo ? 1.6 : charge || workingOutside ? .35 : followingPlayer ? PEBBLE_FOLLOW_STOP : .3
-    const mayMove = !playful && !ui.paused && (!ui.openPanel || !!ui.currentCard) && (!ui.decisionOpen || nearby && !work) && !ui.fading && (playerOutdoors || !!work || charge) && (!followingPlayer || state.following)
+    // Station view parks the companion; explicitly assigned jobs can still travel.
+    const mayMove = (ui.view === 'firstPerson' || !!work) && !playful && !ui.paused && (!ui.openPanel || !!ui.currentCard) && (!ui.decisionOpen || nearby && !work) && !ui.fading && (playerOutdoors || !!work || charge) && (!followingPlayer || state.following)
     const guideSpeed = 2.7 * MathUtils.clamp((9 - playerDist) / 2, 0, 1)
     const motion = pebbleMotionStep(state.speed, dist, stoppedAt, guideTo ? guideSpeed * 1.3 : workingOutside ? 4 : state.guiding ? guideSpeed : followingPlayer ? follow.maxSpeed : 5.8, delta)
     state.speed = mayMove && canFollow ? motion.speed : 0
@@ -197,7 +198,7 @@ export function Pebble({ player }: { player: RefObject<EcctrlHandle | null> }) {
     }
     robot.visible = ui.view === 'station' || ui.area === 'outside'
     let turning = false
-    if (!moved && nearby) {
+    if (!moved && nearby && ui.view === 'firstPerson') {
       const facing = now < state.pointingUntil ? state.goal : body
       const desired = Math.atan2(-(facing.z - state.pos.z), facing.x - state.pos.x)
       const turn = MathUtils.euclideanModulo(desired - robot.rotation.y + Math.PI, Math.PI * 2) - Math.PI

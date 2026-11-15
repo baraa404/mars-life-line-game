@@ -5,10 +5,13 @@ import { buildContext } from '../pebble/buildContext'
 import { HISTORY_LIMIT, QUESTION_LIMIT } from '../pebble/chatTypes'
 import type { ChatMessage, ChatReply, ChatSource } from '../pebble/chatTypes'
 import { generateLocalPebbleReply } from '../pebble/offlineResponder'
+import { askGemini } from '../pebble/gemini'
 import { useMissionStore } from '../state/useMissionStore'
 import './PebbleChat.css'
 
 type PebbleTurn = ChatMessage & { sources?: ChatSource[] }
+
+const browserKey = import.meta.env.VITE_GEMINI_API_KEY
 
 const starters = [
   'What should I do now?',
@@ -31,6 +34,7 @@ export const PebbleChat = memo(function PebbleChat({ visible, speech }: { visibl
   const toggle = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
+    if (browserKey) return
     const request = new AbortController()
     void fetch('/api/pebble/chat', { signal: request.signal })
       .then(response => response.ok ? response.json() : null)
@@ -77,14 +81,21 @@ export const PebbleChat = memo(function PebbleChat({ visible, speech }: { visibl
     let answered = false
 
     try {
-      const response = await fetch('/api/pebble/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, history: turns.slice(-HISTORY_LIMIT), context }),
-        signal: AbortSignal.any([request.signal, AbortSignal.timeout(6_000)]),
-      })
-      if (response.ok) {
-        const reply: ChatReply = await response.json()
+      const signal = AbortSignal.any([request.signal, AbortSignal.timeout(30_000)])
+      const history = turns.slice(-HISTORY_LIMIT)
+      let reply: ChatReply | null = null
+      if (browserKey) {
+        reply = await askGemini(browserKey, 'gemini-3.1-flash-lite', question, history, context, signal)
+      } else {
+        const response = await fetch('/api/pebble/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question, history, context }),
+          signal,
+        })
+        if (response.ok) reply = await response.json()
+      }
+      if (reply) {
         if (typeof reply.answer === 'string' && Array.isArray(reply.sources)) {
           if (!request.signal.aborted) {
             setTurns(previous => [
